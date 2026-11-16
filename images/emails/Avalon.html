@@ -1,0 +1,2181 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"=\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--[if !mso]><!-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!--<![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avalon </title>
+  <style type="text/css">
+    @import url("https://use.typekit.net/vvs4glb.css");
+    @import url("https://use.typekit.net/zvl4jkk.css");
+
+    .ReadMsgBody {
+      width: 100%;
+      background-color: #ffffff;
+    }
+
+    .ExternalClass {
+      width: 100%;
+      background-color: #ffffff;
+    }
+
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {
+      line-height: 100%;
+    }
+
+    html {
+      width: 100%;
+    }
+
+    body {
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    table {
+      border-spacing: 0;
+      table-layout: fixed;
+      margin: 0 auto;
+    }
+
+    table table table {
+      table-layout: auto;
+    }
+
+    .yshortcuts a {
+      border-bottom: none !important;
+    }
+
+    a {
+      color: #636466;
+      text-decoration: none;
+    }
+
+    .textbutton a {
+      font-family: arial, sans-serif !important;
+    }
+
+    .btn-link a,
+    .header-btn a {
+      color: #FFFFFF !important;
+    }
+
+    /*Responsive*/
+    @media only screen and (max-width: 640px) {
+      body {
+        margin: 0px;
+        width: auto !important;
+        font-family: arial, Sans-serif !important;
+      }
+
+      .table-inner {
+        width: 90% !important;
+        max-width: 90% !important;
+      }
+
+      .table-full {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+    }
+
+    @media only screen and (max-width: 479px) {
+      body {
+        width: auto !important;
+        font-family: arial, Sans-serif !important;
+      }
+
+      .table-inner {
+        width: 90% !important;
+      }
+
+      .table-full {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+
+
+      .foot {
+        -webkit-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, 'sans-serif' !important;
+         !important;
+        font-weight: normal;
+        font-size: 11px;
+        color: #333333;
+      }
+
+
+
+      @media only screen and (max-width: 479px) {
+
+        .center-on-narrow {
+          text-align: center !important;
+          display: block !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+          float: none !important;
+        }
+
+        /*Generic utility class for centering. Useful for images, buttons, and nested tables*/
+
+
+
+
+
+        /*gmail*/
+        u+.body .full {
+          width: 100% !important;
+          width: 100vw !important;
+        }
+      }
+
+      .img1 {
+        max-width: 100%;
+      }
+
+      /*Show only in mobile or desktop*/
+
+      @media only screen and (min-width: 639px) {
+        .only_mobile {
+          display: none !important;
+        }
+      }
+
+
+      @media only screen and (max-width: 640px) {
+        .only_desktop {
+          display: none !important;
+        }
+      }
+  </style>
+  <!--[if lt mso 14]>
+    <style type="text/css">
+    td span {
+        font-family: Arial, sans-serif;
+    }
+    
+    td a {
+        font-family: Arial, sans-serif;
+    }
+        body {font-family: Arial, sans-serif !important;}
+    </style>
+<![endif]-->
+  <!--[if mso 15]>
+    <style type="text/css">
+    td span {
+        font-family: Arial, sans-serif;
+    }
+    
+     td a {
+        font-family: Arial, sans-serif;
+    }
+        body {font-family: Arial, sans-serif !important;}
+    </style>
+<![endif]-->
+
+  <!--[if (gte mso 9)|(IE)]>
+<style type="text/css">
+table {
+border-collapse: collapse;
+border-spacing: 0; }
+</style>
+<![endif]-->
+
+
+
+
+
+  <style type="text/css">
+    /* Client-specific Styles */
+    #outlook a {
+      padding: 0;
+    }
+
+    /* Force Outlook to provide a "view in browser" menu link. */
+    body {
+      width: 100% !important;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
+    .ExternalClass {
+      width: 100%;
+    }
+
+    /* Force Hotmail to display emails at full width */
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {
+      line-height: 100%;
+    }
+
+    /* Force Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/ */
+    #backgroundTable {
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+      line-height: 100% !important;
+    }
+
+    img {
+      outline: none;
+      text-decoration: none;
+      border: none;
+      -ms-interpolation-mode: bicubic;
+    }
+
+    a img {
+      border: none;
+    }
+
+    .image_fix {
+      display: block;
+    }
+
+    p {
+      margin: 0px 0px !important;
+    }
+
+    table td {
+      border-collapse: collapse;
+    }
+
+    table {
+      border-collapse: collapse;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+
+    /*##############################################*/
+    /*IPHONE STYLES*/
+    /*##############################################*/
+    @media only screen and (max-width: 480px) {
+      table {
+        position: relative;
+      }
+
+      table[class="fluid-table"],
+      td[class="fluid-cell"] {
+        width: 100% !important;
+        padding: 20px 0px 20px 0px !important;
+      }
+
+      img[class="fluid-image"] {
+        width: 100% !important;
+        height: auto !important;
+      }
+    }
+  </style>
+
+
+
+</head>
+
+<body class="body" bgcolor="#ffffff">
+  <!--[if mso]>
+<style type="text/css">
+body, table, td {font-family: Arial, sans-serif !important;}
+</style>
+<![endif]-->
+
+
+
+
+
+
+  <!--=======================================
+  /// AVALON LOGO AND HEADER STARTS HERE ///
+  ======================================= -->
+
+
+
+
+  <!-- Header -->
+  <table class="full" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+    <tr>
+      <td align="center" bgcolor="#ffffff">
+
+
+        <table align="center" bgcolor="#ffffff" width="100%" border="0" cellspacing="0" cellpadding="0">
+
+          <tr>
+            <td align="center">
+              <table align="center" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="600" align="center">
+
+
+                <tr>
+                  <td align="center" bgcolor="#000001">
+
+                    <a href="https://www.avalonwaterways.com/river-cruises/wine-cruises/?computed_specialinterests_sm=Wine&format=vertical&limit=12&page=0&sort=computed_itinerary_firstbestdiscountedprice_usd_tl%3Dasc"><img
+                        src="https://images.globusfamily.com/ecommunications/Email/Avalon/2024/2024_Avalon_Email_Choices_Wine_Cruise_August_WK1/images/header.jpg"
+                        width="600" style="width:100%;max-width:600px;" alt="Avalon Waterways" /></a>
+
+                    <!--img-->
+                  </td>
+                </tr>
+
+
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  </td>
+  </tr>
+  </table>
+  <!--end Header-->
+
+  <!--=====================================
+  /// AVALON LOGO AND HEADER ENDS HERE ///
+  =================================== -->
+
+
+  <!--=============================
+  /// 1ST PARAGRAPH STARTS HERE ///
+  ============================= -->
+
+
+
+  <!--Black Box Intro-->
+  <table class="full" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+    <tr>
+      <td align="center">
+        <table align="center" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="600" align="center" bgcolor="#000001">
+              <table class="table-inner" width="100%" border="0" align="center" cellpadding="0" cellspacing="0"
+                bgcolor="#000001">
+                <tr>
+                  <td align="center">
+                    <table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+
+                      <tr>
+                        <td align="center" valign="middle">
+                          <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center" valign="middle">
+                            <tbody>
+
+                              <tr>
+                                <td height="20" style="font-size: 1px; line-height: 1px;">&nbsp;
+
+                                </td>
+                              </tr>
+                              <tr>
+                               
+                              </tr>
+                          
+
+                              <tr>
+                                <td align="center">
+                                  <table width="90%" border="0">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center"
+                                          style="font-family: kepler-std, Garamond,Times,serif; font-weight: 300; font-style: normal; font-size: 17px; line-height:250%; line-height: 37px;  mso-line-height-rule:exactly; text-decoration: none; color:#ffffff;"
+                                          valign="middle">
+                                          <span
+                                            style="font-family: kepler-std, Garamond,Times,serif; font-weight: 300; font-style: normal;font-size: 17px; line-height:250%; line-height: 37px; mso-line-height-rule:exactly; text-decoration: none; color:#ffffff; ">
+                                            Whether you have a nose for the perfect Burgundy or if everything you know about wine could fit in a thimbleful of Chardonnay, Avalon’s special cruises featuring the world’s best wines invite you to sniff, swirl, and sip your way through Europe’s legendary and picturesque vineyards. How will you fill your cup?
+
+                                          </span>
+
+                                        </td>
+                                      </tr>
+
+                                      <tr>
+                                        <td height="36" style="font-size: 1px; line-height: 1px;">&nbsp;
+
+                                        </td>
+                                      </tr>
+
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+
+
+                          </table>
+                        </td>
+                      </tr>
+
+
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+
+
+        <!--===========================
+        /// 1ST PARAGRAPH ENDS HERE ///
+       ========================== -->
+
+
+  <!--=========================
+  /// SECTION 1 STARTS HERE ///
+  ========================= -->
+
+
+        <!--1 cruise-->
+        <table class="full" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+          <tr>
+            <td align="center">
+              <table align="center" border="0" cellpadding="0" cellspacing="0">
+
+                <tr>
+                  <td width="600" align="right" bgcolor="#ffffff">
+
+                    <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+                      <tr>
+                        <td align="center">
+                          <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+
+
+                            <tr>
+                              <td align="center" valign="top"><a
+                                  href="https://www.avalonwaterways.com/river-cruises/garonne-river/"><img
+                                    style="display:block; line-height:0px; font-size:0px; border:0px;" class="img1"
+                                    src="https://images.globusfamily.com/ecommunications/Email/Avalon/2024/2024_Avalon_Email_Choices_Wine_Cruise_August_WK1/images/p1.jpg"
+                                    alt="Bonjour Bordeaux!" width="100%" height="auto" /></a>
+                                <!--end img-->
+
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center">
+                                <table width="100%" border="0" align="left" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="center">
+                                      <table bgcolor="#ffffff" width="100%" border="0" cellpadding="0" cellspacing="0">
+
+                                        <!--price-->
+                                        <tr>
+                                          <td align="center" valign="top"
+                                            style="font-family: Arial, sans-serif, !important;color:#434a52; font-size:13px; line-height: 110%;">
+                                            <table width="95%" border="0" cellspacing="0" cellpadding="0"
+                                              align="center">
+                                              <tbody>
+                                                <tr>
+                                                  <td height="15" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                  <td align="center">
+                                                    <table width="90%" border="0" cellspacing="0" cellpadding="0"
+                                                      align="center">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td align="center" valign="top"
+                                                            style="font-family: graphie, 'Helvetica Neue', Helvetica, Arial, 'sans-serif' !important; font-weight: 300; font-style: normal;  -webkit-font-smoothing:antialiased; font-size:26px; mso-line-height: exactly; line-height: 160%; line-height: 42px; text-transform: uppercase;  color: #000001; letter-spacing: 2px;">
+                                                            Bonjour Bordeaux!
+
+                                                          </td>
+                                                        </tr>
+
+
+                                                        <tr>
+                                                          <td height="15" style="font-size: 1px; line-height: 1px;">
+                                                            &nbsp;</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                          <td align="center">
+                                                            <table width="80px" border="0">
+                                                              <tbody>
+                                                                <tr>
+                                                                  <td align="left" height="37" width="80">
+                                                                    <hr width="80px" size="1" color="#ae8746">
+                                                                  </td>
+                                                                </tr>
+                                                              </tbody>
+                                                            </table>
+                                                          </td>
+                                                        </tr>
+
+
+                                                        <tr>
+                                                          <td height="15" style="font-size: 1px; line-height: 1px;">
+                                                            &nbsp;</td>
+                                                        </tr>
+
+                                                        <td align="center"
+                                                          style="font-family: kepler-std, Garamond,Times,serif; font-weight: 300; font-style: normal; font-size: 18px; line-height:250%; line-height: 40px;  mso-line-height-rule:exactly; text-decoration: none; color:#000001;"
+                                                          valign="middle">
+                                                          <span
+                                                            style="font-family: kepler-std, Garamond,Times,serif; font-weight: 300; font-style: normal;font-size: 18px; line-height:250%; line-height: 40px; mso-line-height-rule:exactly; text-decoration: none; color:#000001; ">
+
+
+                                                            From the historic halls of castles and Châteaux to romantic cellars and kitchens where wine bouquets and bon-vivant cuisine tempt the palate, Avalon is bringing Bordeaux to life for the first time for cruisers on the Garonne and Dordogne Rivers in 2025.
+
+
+                                                          </span>
+
+
+
+                                                        </td>
+                                                </tr>
+
+
+
+
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+
+
+                                        <tr>
+                                          <td height="20" style="font-size: 1px; line-height: 1px;">
+                                            &nbsp;</td>
+                                        </tr>
+
+
+
+                                        <tr>
+                                          <td align="center">
+                                            <table width="90%" border="0" cellspacing="0" cellpadding="0"
+                                              align="center">
+                                              <tbody>
+
+
+                                                <tr>
+                                                  <td align="center"
+                                                    style="font-family: graphie, Arial, sans-serif !important; font-weight: 400;font-style: normal;font-size:13px; mso-line-height: exactly; line-height: 160%; line-height: 28px;  color:#000001;  text-decoration: none;">
+                                                    <!--Button-->
+                                                    <table width="200" border="0" class="textbutton" align="center"
+                                                      style="border: 1px solid #ae8746">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td height="54" align="center"
+                                                            style="padding-left: 5px;padding-right: 5px; color:#000001;  font-family: Arial, sans-serif !important; font-size:14px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none; text-transform: uppercase;">
+                                                            <a href="https://www.avalonwaterways.com/river-cruises/garonne-river/"
+                                                              style="padding-left: 5px;padding-right: 5px; color:#000001;  font-family: Arial, sans-serif !important; font-size:14px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none; text-transform: uppercase;"><span
+                                                                style="padding-left: 5px;padding-right: 5px; color:#000001;  font-family: Arial, sans-serif !important; font-size:14px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none; text-transform: uppercase;">View
+                                                                Cruises</span></a>
+                                                          </td>
+                                                        </tr>
+
+
+
+                                                      </tbody>
+                                                    </table>
+
+                                                    <!--End Button-->
+
+                                                  </td>
+                                                </tr>
+
+
+                                              </tbody>
+                                            </table>
+
+
+
+
+                                          </td>
+                                        </tr>
+
+
+                                        <tr>
+                                          <td height="40">&nbsp;</td>
+                                        </tr>
+
+
+                                        </tbody>
+                                      </table>
+
+
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+
+
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+
+
+                    <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                    <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+                    <![endif]-->
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <!--end 1 cruise ->
+
+          <!--=========================
+          /// SECTION 1 ENDS HERE ///
+          ========================= -->
+
+
+        <!--=========================
+  /// SECTION 2 STARTS HERE ///
+  ========================= -->
+
+
+        <!--1 cruise-->
+        <table class="full" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+          <tr>
+            <td align="center">
+              <table align="center" border="0" cellpadding="0" cellspacing="0">
+
+                <tr>
+                  <td width="600" align="right" bgcolor="#ffffff">
+
+                    <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+                      <tr>
+                        <td align="center">
+                          <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+
+
+                            <tr>
+                              <td align="center" valign="top"><a
+                                  href="https://www.avalonwaterways.com/river-cruises/douro-river/?computed_rivers_sm=Douro&format=vertical&limit=12&page=0&sort=computed_itinerary_firstbestdiscountedprice_usd_tl%3Dasc"><img
+                                    style="display:block; line-height:0px; font-size:0px; border:0px;" class="img1"
+                                    src="https://images.globusfamily.com/ecommunications/Email/Avalon/2024/2024_Avalon_Email_Choices_Wine_Cruise_August_WK1/images/p2c.jpg"
+                                    alt="Raise a glass to Pour-tugal" width="100%" height="auto" /></a>
+                                <!--end img-->
+
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center">
+                                <table width="100%" border="0" align="left" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="center">
+                                      <table bgcolor="#ffffff" width="100%" border="0" cellpadding="0" cellspacing="0">
+
+                                        <!--price-->
+                                        <tr>
+                                          <td align="center" valign="top"
+                                            style="font-family: Arial, sans-serif, !important;color:#434a52; font-size:13px; line-height: 110%;">
+                                            <table width="95%" border="0" cellspacing="0" cellpadding="0"
+                                              align="center">
+                                              <tbody>
+                                                <tr>
+                                                  <td height="15" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                  <td align="center">
+                                                    <table width="90%" border="0" cellspacing="0" cellpadding="0"
+                                                      align="center">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td align="center" valign="top"
+                                                            style="font-family: graphie, 'Helvetica Neue', Helvetica, Arial, 'sans-serif' !important; font-weight: 300; font-style: normal;  -webkit-font-smoothing:antialiased; font-size:26px; mso-line-height: exactly; line-height: 160%; line-height: 42px; text-transform: uppercase;  color: #000001; letter-spacing: 2px;">
+                                                            Raise a glass to Pour-tugal!
+
+
+                                                          </td>
+                                                        </tr>
+
+
+                                                        <tr>
+                                                          <td height="15" style="font-size: 1px; line-height: 1px;">
+                                                            &nbsp;</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                          <td align="center">
+                                                            <table width="80px" border="0">
+                                                              <tbody>
+                                                                <tr>
+                                                                  <td align="left" height="37" width="80">
+                                                                    <hr width="80px" size="1" color="#ae8746">
+                                                                  </td>
+                                                                </tr>
+                                                              </tbody>
+                                                            </table>
+                                                          </td>
+                                                        </tr>
+
+
+                                                        <tr>
+                                                          <td height="15" style="font-size: 1px; line-height: 1px;">
+                                                            &nbsp;</td>
+                                                        </tr>
+
+                                                        <td align="center"
+                                                          style="font-family: kepler-std, Garamond,Times,serif; font-weight: 300; font-style: normal; font-size: 18px; line-height:250%; line-height: 40px;  mso-line-height-rule:exactly; text-decoration: none; color:#000001;"
+                                                          valign="middle">
+                                                          <span
+                                                            style="font-family: kepler-std, Garamond,Times,serif; font-weight: 300; font-style: normal;font-size: 18px; line-height:250%; line-height: 40px; mso-line-height-rule:exactly; text-decoration: none; color:#000001; ">
+
+                                                            Another new destination to raise your glasses to? Portugal! Winding through the terraced vineyards and charming villages of the Douro Valley, the all-new Avalon Alegria promises to deliver some of 
+Europe’s most delectable views, vistas, and vinho in 2025.
+
+
+                                                          </span>
+
+
+
+                                                        </td>
+                                                </tr>
+
+
+
+
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+
+
+                                        <tr>
+                                          <td height="20" style="font-size: 1px; line-height: 1px;">
+                                            &nbsp;</td>
+                                        </tr>
+
+
+
+                                        <tr>
+                                          <td align="center">
+                                            <table width="90%" border="0" cellspacing="0" cellpadding="0"
+                                              align="center">
+                                              <tbody>
+
+
+                                                <tr>
+                                                  <td align="center"
+                                                    style="font-family: graphie, Arial, sans-serif !important; font-weight: 400;font-style: normal;font-size:13px; mso-line-height: exactly; line-height: 160%; line-height: 28px;  color:#000001;  text-decoration: none;">
+                                                    <!--Button-->
+                                                    <table width="200" border="0" class="textbutton" align="center"
+                                                      style="border: 1px solid #ae8746">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td height="54" align="center"
+                                                            style="padding-left: 5px;padding-right: 5px; color:#000001;  font-family: Arial, sans-serif !important; font-size:14px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none; text-transform: uppercase;">
+                                                            <a href="https://www.avalonwaterways.com/river-cruises/douro-river/?computed_rivers_sm=Douro&format=vertical&limit=12&page=0&sort=computed_itinerary_firstbestdiscountedprice_usd_tl%3Dasc"
+                                                              style="padding-left: 5px;padding-right: 5px; color:#000001;  font-family: Arial, sans-serif !important; font-size:14px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none; text-transform: uppercase;"><span
+                                                                style="padding-left: 5px;padding-right: 5px; color:#000001;  font-family: Arial, sans-serif !important; font-size:14px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none; text-transform: uppercase;">View
+                                                                Cruises</span></a>
+                                                          </td>
+                                                        </tr>
+
+
+
+                                                      </tbody>
+                                                    </table>
+
+                                                    <!--End Button-->
+
+                                                  </td>
+                                                </tr>
+
+
+                                              </tbody>
+                                            </table>
+
+
+
+
+                                          </td>
+                                        </tr>
+
+
+                                        <tr>
+                                          <td height="30">&nbsp;</td>
+                                        </tr>
+
+
+                                        </tbody>
+                                      </table>
+
+
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+
+
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+
+
+                    <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                    <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+                    <![endif]-->
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <!--end 1 cruise ->
+
+          <!--=========================
+          /// SECTION 2 ENDS HERE ///
+          ========================= -->
+        <!--=========================
+  /// SECTION 3 STARTS HERE ///
+  ========================= -->
+
+
+        <!--1 cruise-->
+        <table class="full" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+          <tr>
+            <td align="center">
+              <table align="center" border="0" cellpadding="0" cellspacing="0">
+
+                <tr>
+                  <td width="600" align="right" bgcolor="#ffffff">
+
+                    <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+                      <tr>
+                        <td align="center">
+                          <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+
+
+                            <tr>
+                              <td align="center" valign="top"><a
+                                  href="https://www.avalonwaterways.com/river-cruises/wine-cruises/?computed_specialinterests_sm=Wine&format=vertical&limit=12&page=0&sort=computed_itinerary_firstbestdiscountedprice_usd_tl%3Dasc"><img
+                                    style="display:block; line-height:0px; font-size:0px; border:0px;" class="img1"
+                                    src="https://images.globusfamily.com/ecommunications/Email/Avalon/2024/2024_Avalon_Email_Choices_Wine_Cruise_August_WK1/images/p3.jpg"
+                                    alt="You had me at Merlot" width="100%" height="auto" /></a>
+                                <!--end img-->
+
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center">
+                                <table width="100%" border="0" align="left" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="center">
+                                      <table bgcolor="#ffffff" width="100%" border="0" cellpadding="0" cellspacing="0">
+
+                                        <!--price-->
+                                        <tr>
+                                          <td align="center" valign="top"
+                                            style="font-family: Arial, sans-serif, !important;color:#434a52; font-size:13px; line-height: 110%;">
+                                            <table width="95%" border="0" cellspacing="0" cellpadding="0"
+                                              align="center">
+                                              <tbody>
+                                                <tr>
+                                                  <td height="15" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                  <td align="center">
+                                                    <table width="90%" border="0" cellspacing="0" cellpadding="0"
+                                                      align="center">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td align="center" valign="top"
+                                                            style="font-family: graphie, 'Helvetica Neue', Helvetica, Arial, 'sans-serif' !important; font-weight: 300; font-style: normal;  -webkit-font-smoothing:antialiased; font-size:26px; mso-line-height: exactly; line-height: 160%; line-height: 42px; text-transform: uppercase;  color: #000001; letter-spacing: 2px;">
+                                                            You had me at Merlot!
+
+
+                                                          </td>
+                                                        </tr>
+
+
+                                                        <tr>
+                                                          <td height="15" style="font-size: 1px; line-height: 1px;">
+                                                            &nbsp;</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                          <td align="center">
+                                                            <table width="80px" border="0">
+                                                              <tbody>
+                                                                <tr>
+                                                                  <td align="left" height="37" width="80">
+                                                                    <hr width="80px" size="1" color="#ae8746">
+                                                                  </td>
+                                                                </tr>
+                                                              </tbody>
+                                                            </table>
+                                                          </td>
+                                                        </tr>
+
+
+                                                        <tr>
+                                                          <td height="15" style="font-size: 1px; line-height: 1px;">
+                                                            &nbsp;</td>
+                                                        </tr>
+
+                                                        <td align="center"
+                                                          style="font-family: kepler-std, Garamond,Times,serif; font-weight: 300; font-style: normal; font-size: 18px; line-height:250%; line-height: 40px;  mso-line-height-rule:exactly; text-decoration: none; color:#000001;"
+                                                          valign="middle">
+                                                          <span
+                                                            style="font-family: kepler-std, Garamond,Times,serif; font-weight: 300; font-style: normal;font-size: 18px; line-height:250%; line-height: 40px; mso-line-height-rule:exactly; text-decoration: none; color:#000001; ">
+
+                                                            Did you know? Our Wine Appreciation Cruises can be found on all the major waterways of Europe, including during harvest season.
+
+                                                          </span>
+
+
+
+                                                        </td>
+                                                </tr>
+
+
+
+
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+
+
+                                        <tr>
+                                          <td height="20" style="font-size: 1px; line-height: 1px;">
+                                            &nbsp;</td>
+                                        </tr>
+
+
+
+                                        <tr>
+                                          <td align="center">
+                                            <table width="90%" border="0" cellspacing="0" cellpadding="0"
+                                              align="center">
+                                              <tbody>
+
+
+                                                <tr>
+                                                  <td align="center"
+                                                    style="font-family: graphie, Arial, sans-serif !important; font-weight: 400;font-style: normal;font-size:13px; mso-line-height: exactly; line-height: 160%; line-height: 28px;  color:#000001;  text-decoration: none;">
+                                                    <!--Button-->
+                                                    <table width="200" border="0" class="textbutton" align="center"
+                                                      style="border: 1px solid #ae8746">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td height="54" align="center"
+                                                            style="padding-left: 5px;padding-right: 5px; color:#000001;  font-family: Arial, sans-serif !important; font-size:14px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none; text-transform: uppercase;">
+                                                            <a href="https://www.avalonwaterways.com/river-cruises/wine-cruises/?computed_specialinterests_sm=Wine&format=vertical&limit=12&page=0&sort=computed_itinerary_firstbestdiscountedprice_usd_tl%3Dasc"
+                                                              style="padding-left: 5px;padding-right: 5px; color:#000001;  font-family: Arial, sans-serif !important; font-size:14px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none; text-transform: uppercase;"><span
+                                                                style="padding-left: 5px;padding-right: 5px; color:#000001;  font-family: Arial, sans-serif !important; font-size:14px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none; text-transform: uppercase;">View
+                                                                Cruises</span></a>
+                                                          </td>
+                                                        </tr>
+
+
+
+                                                      </tbody>
+                                                    </table>
+
+                                                    <!--End Button-->
+
+                                                  </td>
+                                                </tr>
+
+
+                                              </tbody>
+                                            </table>
+
+
+
+
+                                          </td>
+                                        </tr>
+
+
+                                        <tr>
+                                          <td height="30">&nbsp;</td>
+                                        </tr>
+
+
+                                        </tbody>
+                                      </table>
+
+
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+
+
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+
+
+                    <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                    <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+                    <![endif]-->
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <!--end 1 cruise ->
+
+          <!--=========================
+          /// SECTION 3 ENDS HERE ///
+          ========================= -->
+
+
+      <!--===============================
+     /// On cloud wine! STARTS HERE ///
+     ================================ -->
+
+
+
+              <!--Intro With Button-->
+              <table class="full" width="100%" border="0" align="center" cellpadding="0" cellspacing="0"
+                bgcolor="#ffffff">
+                <tr>
+                  <td align="center">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td width="600" align="center" bgcolor="#000000">
+                          <br>
+                          <table class="table-inner" width="80%" style=" align=" center" cellpadding="0"
+                            cellspacing="0">
+                            <tr>
+                              <td align="center">
+                                <table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+
+
+                                  <!--title-->
+
+                                  <!--content-->
+
+
+                                  <tr>
+                                    <td height="15" style="font-size: 1px; line-height: 1px;">&nbsp;
+
+
+                                    </td>
+                                  </tr>
+
+
+                                  <td align="center"
+                                    style="font-family: graphie, Arial, sans-serif !important; font-weight: 400;font-style: normal;font-size:20px; mso-line-height: exactly; line-height: 160%; line-height: 28px; text-transform: uppercase; color:#ffffff;  letter-spacing:.5px;">
+                                    <span
+                                      style="font-family: graphie, Arial, sans-serif !important; font-weight: 400;font-style: normal;font-size:20px; mso-line-height: exactly; line-height: 160%; line-height: 28px; text-transform: uppercase;  letter-spacing:.5px;color:#ffffff;">
+                                      On cloud wine!
+                                    </span>
+
+
+
+
+                                  </td>
+
+
+                              </td>
+                            </tr>
+
+
+                            <tr>
+                              <td height="15" style="font-size: 1px; line-height: 1px;">&nbsp;
+
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td align="center">
+                                <table width="95px" border="0">
+                                  <tbody>
+                                    <tr>
+                                      <td align="left" height="37" width="80">
+                                        <hr width="85px" size="1" color="#ae8746">
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+
+
+                            <tr>
+                              <td height="15" style="font-size: 1px; line-height: 1px;">&nbsp;
+
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td align="center"
+                                style="font-family: kepler-std, Garamond,Times,serif; font-weight: 300; font-style: normal; font-size: 17px; line-height:250%; line-height: 37px;  mso-line-height-rule:exactly; text-decoration: none; color:#ffffff;"
+                                valign="middle">
+                                <span
+                                  style="font-family: kepler-std, Garamond,Times,serif; font-weight: 300; font-style: normal;font-size: 17px; line-height:250%; line-height: 37px; mso-line-height-rule:exactly; text-decoration: none; color:#ffffff; ">
+
+                                 No matter which cruise you choose – a wine-themed departure or a cruise that happens to sail through spectacular, wine-producing 
+regions of Europe – we’ve got your ticket to incredible! 
+
+
+                                </span>
+
+
+
+
+                              </td>
+                            </tr>
+
+
+
+
+
+
+
+
+                            <tr>
+                              <td height="40" style="font-size: 1px; line-height: 1px;">&nbsp;
+                              </td>
+                            </tr>
+
+
+                            </tbody>
+                          </table>
+
+
+                          <!--Button-->
+                          <table width="200" border="0" class="textbutton" align="center"
+                            style="border: 1px solid #ae8746">
+                            <tbody>
+                              <tr>
+                                <td height="54" align="center"
+                                  style="padding-left: 5px;padding-right: 5px; color:#ffffff;  font-family: Arial, sans-serif !important; font-size:14px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none; text-transform: uppercase;">
+                                  <a href="https://www.avalonwaterways.com/river-cruises/wine-cruises/?computed_specialinterests_sm=Wine&format=vertical&limit=12&page=0&sort=computed_itinerary_firstbestdiscountedprice_usd_tl%3Dasc"
+                                    style="padding-left: 5px;padding-right: 5px; color:#ffffff;  font-family: Arial, sans-serif !important; font-size:14px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none; text-transform: uppercase;"><span
+                                      style="padding-left: 5px;padding-right: 5px; color:#ffffff;  font-family: Arial, sans-serif !important; font-size:14px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none; text-transform: uppercase;">View Cruises</span></a>
+                                </td>
+                              </tr>
+
+
+
+                            </tbody>
+                          </table>
+
+                          <!--End Button-->
+                      <tr>
+                        <td height="27" style="font-size: 1px; line-height: 1px;">&nbsp; </td>
+                      </tr>
+                  </td>
+                </tr>
+
+
+
+
+
+              </table>
+
+
+
+
+            </td>
+          </tr>
+
+
+
+
+        </table>
+
+
+
+
+
+
+      </td>
+    </tr>
+
+  </table>
+  <!--end Intro With Button-->
+
+
+  <!--=================================
+     /// On cloud wine! ENDS HERE ///
+  ================================= -->
+
+
+          <!--==============================
+  /// SAIL INTO 2025 STARTS HERE ///
+  ============================== -->
+
+
+  <!--1 cruise-->
+  <table class="full" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+    <tr>
+      <td align="center">
+        <table align="center" border="0" cellpadding="0" cellspacing="0">
+
+          <tr>
+            <td width="600" align="right" bgcolor="#ffffff">
+
+              <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+                <tr>
+                  <td align="center">
+                    <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+                     
+
+                      <!--img-->
+                      <tr>
+                                <td align="center" valign="top"><a href="https://www.avalonwaterways.com/deals/"><img style="display:block; line-height:0px; font-size:0px; border:0px;" class="img1" src="https://images.globusfamily.com/ecommunications/Email/Avalon/2024/2024_Avalon_Email_Rhone_River_Video_July_WK5/images/sub.jpg" alt="Wide Open Wonder" width="100%" height="auto" /></a>
+								  <!--end img-->
+								  
+								  </td>
+                              </tr>
+                      <tr>
+                        <td align="center">
+                          <table width="100%" border="0" align="left" cellpadding="0" cellspacing="0">
+                            <tr>
+                              <td align="center">
+                                <table bgcolor="#ffffff" width="100%" border="0" cellpadding="0" cellspacing="0">
+
+                                  <!--price-->
+                                  <tr>
+                                    <td align="center" valign="top"
+                                      style="font-family: Arial, sans-serif, !important;color:#434a52; font-size:13px; line-height: 110%;">
+                                      <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                        <tbody>
+                                          <tr>
+                                            <td height="37">&nbsp;</td>
+                                          </tr>
+                                          <tr>
+                                            <td align="center">
+                                              <table width="90%" border="0" cellspacing="0" cellpadding="0"
+                                                align="center">
+                                                <tbody>
+                                                  <tr>
+                                                    <td align="center" valign="top"
+                                                      style="font-family: graphie, 'Helvetica Neue', Helvetica, Arial, 'sans-serif' !important; font-weight: 300; font-style: normal;  -webkit-font-smoothing:antialiased; font-size:26px; mso-line-height: exactly; line-height: 160%; line-height: 42px; text-transform: uppercase;  color: #000001; letter-spacing: 3px;">
+
+
+                                                      Free Panorama Suite Upgrade
+
+
+
+                                                    </td>
+                                                  </tr>
+
+
+                                                  <tr>
+                                                    <td align="center"
+                                                      style="font-family: kepler-std, Garamond,Times,serif; font-weight: 400; font-style: normal; font-size: 17px; line-height:40px; text-decoration: none; color:#000001;;"
+                                                      class="center-on-narrow">
+                                                      <span
+                                                        style="font-family: kepler-std, Garamond,Times,serif; font-weight: 400; font-style: normal; font-size: 17px; line-height:40px; text-decoration: none; color:#000001;;"
+                                                        class="center-on-narrow">
+
+
+
+                                                        on select Europe river cruises*
+
+
+
+
+                                                      </span>
+
+
+
+
+                                                    </td>
+                                                  </tr>
+
+
+                                                </tbody>
+                                              </table>
+                                            </td>
+                                          </tr>
+
+
+                                          <tr>
+                                            <td height="10" style="font-size: 1px; line-height: 1px;">
+                                              &nbsp;
+                                            </td>
+                                          </tr>
+
+
+                                          <tr>
+                                            <td height="10" style="font-size: 1px; line-height: 1px;">
+                                              &nbsp;
+                                            </td>
+                                          </tr>
+
+
+                                          <tr>
+                                            <td align="center">
+                                              <table width="90%" border="0" cellspacing="0" cellpadding="0"
+                                                align="center">
+                                                <tbody>
+
+                                                  <tr>
+                                                    <td height="17" style="font-size: 1px; line-height: 1px;">
+                                                      &nbsp;</td>
+                                                  </tr>
+
+                                                  <tr>
+                                                    <td align="center"
+                                                      style="font-family: graphie, Arial, sans-serif !important; font-weight: 400;font-style: normal;font-size:14px; mso-line-height: exactly; line-height: 160%; line-height: 28px;  color:#000001;;  text-decoration: none;">
+                                                      <!--Button-->
+                                                      <table width="200" border="0" class="textbutton" align="center"
+                                                        style="border: 1px solid #ae8746">
+                                                        <tbody>
+                                                          <tr>
+                                                            <td height="54" align="center"
+                                                              style="padding-left: 5px;padding-right: 5px; color:#000001;  font-family: Arial, sans-serif !important; font-size:14px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none; text-transform: uppercase;">
+                                                              <a href="https://www.avalonwaterways.com/deals/"
+                                                                style="padding-left: 5px;padding-right: 5px; color:#000001;  font-family: Arial, sans-serif !important; font-size:14px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none; text-transform: uppercase;"><span
+                                                                  style="padding-left: 5px;padding-right: 5px; color:#000001;  font-family: Arial, sans-serif !important; font-size:14px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none; text-transform: uppercase;">View
+                                                                  Sale</span></a>
+                                                            </td>
+                                                          </tr>
+
+
+
+                                                        </tbody>
+                                                      </table>
+
+                                                      <!--End Button-->
+
+
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td height="37">&nbsp;</td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+
+
+
+
+                                            </td>
+                                          </tr>
+
+
+
+
+
+
+                                      </table>
+
+
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+
+
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+
+
+                    <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                    <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+                    <![endif]-->
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <!--end 1 cruise ->
+
+  <!--============================
+  /// SAIL INTO 2025 ENDS HERE ///
+  ============================= -->
+
+
+      
+      <!--==================================================
+     /// Take Off with Travel Credit! STARTS HERE ///
+     ================================================= -->
+
+
+
+              <!--Intro With Button-->
+              <table class="full" width="100%" border="0" align="center" cellpadding="0" cellspacing="0"
+                bgcolor="#ffffff">
+                <tr>
+                  <td align="center">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td width="600" align="center" bgcolor="#000000">
+                          <br>
+                          <table class="table-inner" width="80%" style=" align=" center" cellpadding="0"
+                            cellspacing="0">
+                            <tr>
+                              <td align="center">
+                                <table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+
+
+                                  <!--title-->
+
+                                  <!--content-->
+
+
+                                  <tr>
+                                    <td height="15" style="font-size: 1px; line-height: 1px;">&nbsp;
+
+
+                                    </td>
+                                  </tr>
+
+
+                                  <td align="center"
+                                    style="font-family: graphie, Arial, sans-serif !important; font-weight: 400;font-style: normal;font-size:20px; mso-line-height: exactly; line-height: 160%; line-height: 28px; text-transform: uppercase; color:#ffffff;  letter-spacing:.5px;">
+                                    <span
+                                      style="font-family: graphie, Arial, sans-serif !important; font-weight: 400;font-style: normal;font-size:20px; mso-line-height: exactly; line-height: 160%; line-height: 28px; text-transform: uppercase;  letter-spacing:.5px;color:#ffffff;">
+                                      Take Off with Travel Credit!
+                                    </span>
+
+
+
+
+                                  </td>
+
+
+                              </td>
+                            </tr>
+
+
+                            <tr>
+                              <td height="15" style="font-size: 1px; line-height: 1px;">&nbsp;
+
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td align="center">
+                                <table width="95px" border="0">
+                                  <tbody>
+                                    <tr>
+                                      <td align="left" height="37" width="80">
+                                        <hr width="85px" size="1" color="#ae8746">
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+
+
+                            <tr>
+                              <td height="15" style="font-size: 1px; line-height: 1px;">&nbsp;
+
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td align="center"
+                                style="font-family: kepler-std, Garamond,Times,serif; font-weight: 300; font-style: normal; font-size: 17px; line-height:250%; line-height: 37px;  mso-line-height-rule:exactly; text-decoration: none; color:#ffffff;"
+                                valign="middle">
+                                <span
+                                  style="font-family: kepler-std, Garamond,Times,serif; font-weight: 300; font-style: normal;font-size: 17px; line-height:250%; line-height: 37px; mso-line-height-rule:exactly; text-decoration: none; color:#ffffff; ">
+
+                                  <p>Did you know? When you cruise the world with us, you receive travel credit (funds)
+                                    to use
+                                    on future travel! With hundreds of vacations and nearly 100 years of experience,
+                                    we’ve
+                                    paved the perfect path for you to turn dreams into plans. If you might be sitting on
+                                    travel credit – something we call Welcome Back Credit – and you’d like to have fun
+                                    with
+                                    your funds, check your status with us or your Travel Advisor before booking your
+                                    next
+                                    cruise or tour! </p>
+
+
+                                </span>
+
+
+
+
+                              </td>
+                            </tr>
+
+
+
+
+
+
+
+
+                            <tr>
+                              <td height="40" style="font-size: 1px; line-height: 1px;">&nbsp;
+                              </td>
+                            </tr>
+
+
+                            </tbody>
+                          </table>
+
+
+                          <!--Button-->
+                          <table width="200" border="0" class="textbutton" align="center"
+                            style="border: 1px solid #ae8746">
+                            <tbody>
+                              <tr>
+                                <td height="54" align="center"
+                                  style="padding-left: 5px;padding-right: 5px; color:#ffffff;  font-family: Arial, sans-serif !important; font-size:14px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none; text-transform: uppercase;">
+                                  <a href="https://www.avalonwaterways.com/cruise-credit/"
+                                    style="padding-left: 5px;padding-right: 5px; color:#ffffff;  font-family: Arial, sans-serif !important; font-size:14px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none; text-transform: uppercase;"><span
+                                      style="padding-left: 5px;padding-right: 5px; color:#ffffff;  font-family: Arial, sans-serif !important; font-size:14px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none; text-transform: uppercase;">LEARN
+                                      MORE</span></a>
+                                </td>
+                              </tr>
+
+
+
+                            </tbody>
+                          </table>
+
+                          <!--End Button-->
+                      <tr>
+                        <td height="27" style="font-size: 1px; line-height: 1px;">&nbsp; </td>
+                      </tr>
+                  </td>
+                </tr>
+
+
+
+
+
+              </table>
+
+
+
+
+            </td>
+          </tr>
+
+
+
+
+        </table>
+
+
+
+
+
+
+      </td>
+    </tr>
+
+  </table>
+  <!--end Intro With Button-->
+
+
+  <!--===============================================
+     /// A SMALL DEPOSIT FOR BIG DREAMS ENDS HERE ///
+  =============================================== -->
+
+
+
+
+
+
+
+
+
+
+
+  <!--==================================
+   /// CRUISING ELEVATED STARTS HERE ///
+    ================================== -->
+
+
+
+
+  <!-- Header -->
+  <table class="full" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+    <tr>
+      <td align="center" bgcolor="#ffffff">
+
+
+        <table align="center" bgcolor="#ffffff" width="100%" border="0" cellspacing="0" cellpadding="0">
+
+          <tr>
+            <td align="center">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+                <tr>
+                  <td width="600" align="center" bgcolor="#ffffff">
+
+                <tr>
+                  <td height="45">&nbsp;</td>
+                </tr>
+
+                <tr>
+                  <td align="center" bgcolor="#ffffff">
+                    <!--img-->
+                    <!--img--><a href="https://www.avalonwaterways.com/why-avalon/photos/">
+                      <img style="display:block; line-height:0px; font-size:0px; border:0px;"
+                        src="https://images.globusfamily.com/ecommunications/Email/Avalon/2023/2023_Avalon_USA_Today_10Best_Win_Email_April_WK3/images/ce2.png"
+                        alt="Cruising Elevated"></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td height="37">&nbsp;</td>
+                </tr>
+            </td>
+          </tr>
+        </table>
+        <!--end Header-->
+
+        <!--Promo With Button Gray-->
+        <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" class="full">
+
+          <tr>
+            <td align="center">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+
+
+                <tr>
+                  <td bgcolor="#ffffff">
+
+                    <table class="table-inner" width="90%" align="center" border="0" cellpadding="0" cellspacing="0">
+
+
+
+                      <tr>
+
+                        <td width="600" align="center" valign="top">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              <tr>
+                                <td align="center">
+                                  <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                    <tbody>
+
+                                      <tr>
+                                        <td align="center"
+                                          style="font-family: kepler-std, Garamond,Times,serif; font-weight: 300; font-style: normal; font-size: 16px; line-height:250%; line-height: 37px;  mso-line-height-rule:exactly; text-decoration: none; color:#666666;"
+                                          valign="middle" class="bodyContent">
+                                          <span
+                                            style="font-family: kepler-std, Garamond,Times,serif; font-weight: 300; font-style: normal;font-size: 16px; line-height:250%; line-height: 37px; mso-line-height-rule:exactly; text-decoration: none; color:#666666; "
+                                            class="bodyContent">
+
+                                            One step aboard our modern, luxurious Suite Ships with
+                                            the grandest views in
+                                            cruising and you'll see how the tides they are
+                                            a-changin'. Welcome to a new
+                                            wave in cruising. Welcome aboard Avalon Waterways.
+
+
+
+
+
+
+
+
+
+
+                                          </span>
+
+
+
+
+                                        </td>
+                                      </tr>
+
+                                      <tr>
+                                        <td height="37">&nbsp;</td>
+                                      </tr>
+
+
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+
+
+
+
+
+
+
+
+
+
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                  </td>
+                </tr>
+
+              </table>
+            </td>
+          </tr>
+
+        </table>
+
+
+
+
+        <!-- End Promo With Button Gray-->
+
+
+        <!--White Background Button-->
+        <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" class="full">
+
+          <tr>
+            <td align="center">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+
+                <tr>
+
+                  <td width="600" align="center" bgcolor="#ffffff">
+                    <table class="table-inner" width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+
+
+
+
+
+
+
+
+
+                      <tr>
+                        <td>
+                          <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tbody>
+
+
+
+                              <tr>
+                                <td align="center">
+
+
+                                  <!--Button-->
+                                  <table width="200" border="0" class="textbutton" align="center"
+                                    style="border: 1px solid #ae8746">
+                                    <tbody>
+                                      <tr>
+                                        <td height="54" align="center"
+                                          style="padding-left: 5px;padding-right: 5px; color:#000001;  font-family: Arial, sans-serif !important; font-size:14px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none; text-transform: uppercase;">
+                                          <a href="https://www.avalonwaterways.com/why-avalon/photos/"
+                                            style="padding-left: 5px;padding-right: 5px; color:#000001;  font-family: Arial, sans-serif !important; font-size:14px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none; text-transform: uppercase;"><span
+                                              style="padding-left: 5px;padding-right: 5px; color:#000001;  font-family: Arial, sans-serif !important; font-size:14px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none; text-transform: uppercase;">LEARN
+                                              MORE</span></a>
+                                        </td>
+                                      </tr>
+
+
+
+                                    </tbody>
+                                  </table>
+
+                                  <!--End Button-->
+
+
+
+
+
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+
+
+
+
+
+
+                      <tr>
+                        <td height="45" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                      </tr>
+
+
+
+
+
+
+
+
+
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+        </table>
+
+
+
+        <!-- End White Background Button->
+
+
+                                <!--===============================
+                                /// CRUISING ELEVATED ENDS HERE ///
+                                =============================== -->
+
+
+
+
+        <!--Avalon CSR Footer rev -->
+        <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+
+          <tr>
+            <td align="center">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+
+
+
+                <td width="600" align="center" bgcolor="#000001">
+                  <table class="table-inner" width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+
+
+
+                    <tr>
+
+
+
+                      <td width="600" align="center" valign="top">
+                        <table width="82%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tbody>
+                            <tr>
+                              <td height="37">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="middle">
+                                <center>
+
+
+                                  <img style="display:block; line-height:0px; font-size:0px; border:0px;" class="img1"
+                                    src="https://images.globusfamily.com/ecommunications/Email/Avalon/2023/2024_Avalon_Email_Cruise_into_Black_Friday_November/images/a5B.JPG"
+                                    alt="Avalon Waterways" width="75" max-width="75px" height="auto">
+
+
+
+
+
+
+
+
+
+
+                                </center>
+
+
+
+                              </td>
+                            </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <tr>
+                              <td height="17" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td align="center">
+                                <table width="80px" border="0">
+                                  <tbody>
+                                    <tr>
+                                      <td align="left" height="37" width="80">
+                                        <hr width="80px" size="1">
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+
+                            <tr align="center" valign="middle"
+                              style="font-family: kepler-std, Garamond,Times,serif; font-weight: 300; font-style: normal; font-size: 14px;  text-decoration: none; color:#FFFFFF;">
+
+
+                              <td align="center" valign="middle"
+                                style="font-family: kepler-std, Garamond,Times,serif; font-weight: 300; font-style: normal; font-size: 14px;  text-decoration: none; color:#FFFFFF;">
+                                <!--[if mso]>
+  <font face = "Garamond, Times, serif, Times New Roman; ">
+<![endif]-->
+                                <span
+                                  style="font-family: kepler-std, Garamond,Times,serif; font-weight: 300; font-style: normal; font-size: 14px;  text-decoration: none; color:#FFFFFF;">Contact
+                                  Avalon @</span> <span
+                                  style="font-family: kepler-std, Garamond,Times,serif; font-weight: 300; font-style: normal; font-size: 14px;  text-decoration: none; color:#FFFFFF;"><a
+                                    href="tel:1-866-397-6594"
+                                    style="font-family: kepler-std, Garamond,Times,serif;!important; font-style: normal;font-size: 13px;  text-decoration: none; color:#FFFFFF;">866.397.6594</a></span>
+                                <!--[if mso]>
+</font>
+<![endif]-->
+                              </td>
+                            </tr>
+                            <tr>
+                              <td height="17" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                            </tr>
+                            <tr align="center" valign="middle">
+
+
+                              <td align="center" valign="middle"> <span style="font-family: kepler-std, Garamond,Times,serif;!important; font-style: normal;font-size: 13px; text-decoration: none; color:#FFFFFF; 
+                                                
+                                                
+                                                "><a href="https://www.avalonwaterways.com/find-agent"
+                                    style="font-family: kepler-std, Garamond,Times,serif; font-weight: 300; font-style: normal; font-size: 14px;  text-decoration: none; color:#FFFFFF;">Contact
+                                    Your Travel Agent </a></span></td>
+                            </tr>
+                            <tr>
+                              <td height="17" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                            </tr>
+
+
+                            <tr align="center" valign="middle">
+
+
+                              <td align="center" valign="middle"> <span
+                                  style="font-family: kepler-std, Garamond,Times,serif;!important; font-style: normal;font-size: 13px; text-decoration: none; color:#FFFFFF; "><a
+                                    href="https://www.avalonwaterways.com/find-agent"
+                                    style="font-family: kepler-std, Garamond,Times,serif; font-weight: 300; font-style: normal; font-size: 14px;  text-decoration: none; color:#FFFFFF;">Get
+                                    a Quote</a></span></td>
+                            </tr>
+
+
+
+
+
+
+
+
+
+                            <tr>
+                              <td align="center">
+                                <table width="80px" border="0">
+                                  <tbody>
+                                    <tr>
+                                      <td align="left" height="37" width="80">
+                                        <hr width="80px" size="1">
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td height="17" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td height="51" align="center" valign="middle">
+                                <table id="Table_01" width="104" height="31" border="0" cellpadding="0" cellspacing="0"
+                                  align="center">
+
+                                  <tr>
+                                    <td align="center" valign="middle">
+
+                                      <a href="http://www.facebook.com/AvalonWaterways">
+                                        <img
+                                          src="https://images.globusfamily.com/ecommunications/Email/Avalon/2023/2024_Avalon_Email_Cruise_into_Black_Friday_November/images/fbrev2.png"
+                                          alt="Facebook" width="35" max-width="35px"></a>
+
+
+                                    </td>
+
+                                    <td align="center" valign="middle">
+
+
+                                      <a href="http://www.youtube.com/avalonwaterways"> <img
+                                          src="https://images.globusfamily.com/ecommunications/Email/Avalon/2023/2024_Avalon_Email_Cruise_into_Black_Friday_November/images/ytrev.png"
+                                          alt="YouTube" width="35" max-width="35px"></a>
+
+
+                                    </td>
+
+
+                                    <td align="center" valign="middle">
+
+
+                                      <a href="https://www.instagram.com/avalonwaterways/"><img
+                                          src="https://images.globusfamily.com/ecommunications/Email/Avalon/2023/2024_Avalon_Email_Cruise_into_Black_Friday_November/images/instarev2.png"
+                                          alt="Instagram" width="35" max-width="35px"></a>
+
+
+                                    </td>
+
+
+
+
+                                  </tr>
+                                  <tr>
+                                    <td height="37">&nbsp;</td>
+                                  </tr>
+
+                                </table>
+                              </td>
+                            </tr>
+
+
+
+
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </table>
+            </td>
+          </tr>
+
+        </table>
+
+
+        <!--Avalon CSR Footer rev -->
+
+
+        <!-- Trust Pilot -->
+        <table class="full" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+          <tr>
+            <td align="center" bgcolor="#ffffff">
+
+
+              <table align="center" bgcolor="#ffffff" width="100%" border="0" cellspacing="0" cellpadding="0">
+
+                <tr>
+                  <td align="center">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td height="17">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td width="600" align="center">
+
+
+
+
+                          <p
+                            style="font-family: Arial, Arial Black, Tahoma, Trebuchet MS, Verdana, sans-serif; font-size: 12px; color: #aaa; text-decoration: none;">
+                            <a href="https://www.avalonwaterways.com/Avalon-Testimonials/" target="_blank"
+                              rel="noopener noreferrer" style="text-decoration:none;text-underline: none;">
+                              <img
+                                src="https://emailsignature.trustpilot.com/signature/en-US/2/565f5d730000ff0005863c1a/text.png"
+                                border="0" height="16" style="max-height: 16px;border: none;"
+                                alt="Trustpilot rating"><br>
+                              <img
+                                src="https://emailsignature.trustpilot.com/signature/en-US/2/565f5d730000ff0005863c1a/stars.png"
+                                border="0" width="160" style="max-width: 160px; width: 100%;border: none;"
+                                alt="Trustpilot Stars"></a>
+                            <br>
+                            <a href="https://www.avalonwaterways.com/Avalon-Testimonials/" target="_blank"
+                              rel="noopener noreferrer" style="text-decoration:none;text-underline: none;"><img
+                                src="https://emailsignature.trustpilot.com/brand/s/2/logo.png" border="0" width="79"
+                                style="max-width: 79px; width: 100%;border: none;" alt="Trustpilot Logo"></a>
+                          </p>
+                        </td>
+                      </tr>
+
+
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <!--end Trust Pilot -->
+
+
+
+        <!-- Disclaimer -->
+        <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" class="full" bgcolor="#ffffff">
+          <tr>
+            <td align="center">
+              <table align="center" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="600" align="center">
+                    <table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td height="36" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                      </tr>
+
+
+                      <tr>
+                        <td
+                          style="font-family: Arial, 'sans-serif' !important; font-weight:normal; font-size:11px; line-height: 26px; color:#333333"
+                          class="foot">
+                          <!--disclaimer text--><span
+                            style="font-family: Arial, 'sans-serif' !important; font-weight:normal; font-size:11px; line-height: 26px color:#333333"><sup>*</sup>
+                            Book a select 2024 or 2025 Avalon Waterways Europe river cruise in a Panorama Suite (cabin category B, A or P) and receive the cost of the cabin upgrade from a category E Deluxe Stateroom for free. Booking must be made under deposit and discount applied between July 2, 2024 and September 4, 2024 for travel at select times in 2024 and 2025. Not applicable to charters or custom tours. Offer does not apply to Category D, E or Royal Suites. Discount will apply to individual members of groups adding a name and non-refundable per person deposit. Offer reliant on space availability and may be withdrawn at any time. Offer combinable only with Welcome Back Credits. Applies to new bookings only; offer will not be applied to existing bookings. Full cancellation penalties will apply. Additional restrictions may apply; see Travel Terms & Conditions for details. May be withdrawn at any time. Offer applies to participating GFOB offices only. XTRJT
+
+                            <br /><br />
+
+
+
+
+
+                          </span>
+
+                          <br /><br />
+
+
+                          <div style="Arial, sans-serif !important; font-weight:normal; font-size:11px; color:#333333"
+                            class="foot">

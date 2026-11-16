@@ -1,0 +1,2835 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"=\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--[if !mso]><!-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!--<![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Globus</title>
+	
+	
+	  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700'rel='stylesheet' type='text/css'/>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	
+  <style type="text/css">
+	  
+	  
+	
+ @media screen{
+       .open {
+         font-family: 'Open Sans', Arial, sans-serif !important;
+		   
+	 }
+	 
+	 .cardo {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+	 
+
+    .ReadMsgBody {
+      width: 100%;
+      background-color: #ffffff;
+    }
+
+    .ExternalClass {
+      width: 100%;
+      background-color: #ffffff;
+    }
+
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {
+      line-height: 100%;
+    }
+
+    html {
+      width: 100%;
+    }
+
+    body {
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    table {
+      border-spacing: 0;
+      table-layout: fixed;
+      margin: 0 auto;
+    }
+
+    table table table {
+      table-layout: auto;
+    }
+
+    .yshortcuts a {
+      border-bottom: none !important;
+    }
+
+    a {
+      color: #636466;
+      text-decoration: none;
+    }
+
+    .textbutton a {
+      font-family: arial, sans-serif !important;
+    }
+
+    .btn-link a,
+    .header-btn a {
+      color: #FFFFFF !important;
+    }
+
+    /*Responsive*/
+    @media only screen and (max-width: 640px) {
+      body {
+        margin: 0px;
+        width: auto !important;
+        font-family: arial, Sans-serif !important;
+      }
+
+      .table-inner {
+        width: 90% !important;
+        max-width: 90% !important;
+
+      }
+
+
+
+      .table-full {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+    }
+
+    @media only screen and (max-width: 479px) {
+      body {
+        width: auto !important;
+        font-family: arial, Sans-serif !important;
+      }
+
+      .table-inner {
+        width: 90% !important;
+      }
+
+      .table-full {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+
+
+      .foot {
+        -webkit-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, 'sans-serif' !important;
+         !important;
+        font-weight: normal;
+        font-size: 11px;
+        color: #333333;
+      }
+
+
+
+      @media only screen and (max-width: 479px) {
+
+        .center-on-narrow {
+          text-align: center !important;
+          display: block !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+          float: none !important;
+        }
+
+        /*Generic utility class for centering. Useful for images, buttons, and nested tables*/
+
+
+
+
+
+        /*gmail*/
+        u+.body .full {
+          width: 100% !important;
+          width: 100vw !important;
+        }
+      }
+
+      .img1 {
+        max-width: 100%;
+      }
+
+      /*Show only in mobile or desktop*/
+
+      @media only screen and (min-width: 639px) {
+        .only_mobile {
+          display: none !important;
+        }
+      }
+
+
+      @media only screen and (max-width: 640px) {
+        .only_desktop {
+          display: none !important;
+        }
+      }
+  </style>
+  <!--[if lt mso 14]>
+    <style type="text/css">
+    td span {
+        font-family: Arial, sans-serif;
+    }
+    
+    td a {
+        font-family: Arial, sans-serif;
+    }
+        body {font-family: Arial, sans-serif !important;}
+    </style>
+<![endif]-->
+  <!--[if mso 15]>
+    <style type="text/css">
+    td span {
+        font-family: Arial, sans-serif;
+    }
+    
+     td a {
+        font-family: Arial, sans-serif;
+    }
+        body {font-family: Arial, sans-serif !important;}
+    </style>
+<![endif]-->
+
+  <!--[if (gte mso 9)|(IE)]>
+<style type="text/css">
+table {
+border-collapse: collapse;
+border-spacing: 0; }
+</style>
+<![endif]-->
+
+
+
+	  <!--[if (gte mso 9)|(IE)]>
+    <style>
+    .keep-black {
+        mso-style-textfill-type:gradient;
+        mso-style-textfill-fill-gradientfill-stoplist:"0 \#000000 1 100000\,99000 \#000000 1 100000";
+        color: #ffffff !important;
+    }
+    a.keep-black {
+        mso-style-textfill-type:gradient;
+        mso-style-textfill-fill-gradientfill-stoplist:"0 \#000000 1 100000\,99000 \#000000 1 100000";
+        color: #ffffff !important;
+    }
+    .keep-white {
+        mso-style-textfill-type:gradient;
+        mso-style-textfill-fill-gradientfill-stoplist:"0 \#FFFFFF 0 100000\,100000 \#FFFFFF 0 100000";
+        color: #000000 !important;
+    }
+    a.keep-white {
+        mso-style-textfill-type:gradient;
+        mso-style-textfill-fill-gradientfill-stoplist:"0 \#ffffff 1 100000\,100000 \#ffffff 1 100000";
+        color: #000000 !important;
+    }
+    </style>
+    <![endif]-->
+
+
+  <style type="text/css">
+    /* Client-specific Styles */
+    #outlook a {
+      padding: 0;
+    }
+
+    /* Force Outlook to provide a "view in browser" menu link. */
+    body {
+      width: 100% !important;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
+    .ExternalClass {
+      width: 100%;
+    }
+
+    /* Force Hotmail to display emails at full width */
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {
+      line-height: 100%;
+    }
+
+    /* Force Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/ */
+    #backgroundTable {
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+      line-height: 100% !important;
+    }
+
+    img {
+      outline: none;
+      text-decoration: none;
+      border: none;
+      -ms-interpolation-mode: bicubic;
+    }
+
+    a img {
+      border: none;
+    }
+
+    .image_fix {
+      display: block;
+    }
+
+    p {
+      margin: 0px 0px !important;
+    }
+
+    table td {
+      border-collapse: collapse;
+    }
+
+    table {
+      border-collapse: collapse;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+
+    /*##############################################*/
+    /*IPHONE STYLES*/
+    /*##############################################*/
+    @media only screen and (max-width: 480px) {
+      table {
+        position: relative;
+      }
+
+      table[class="fluid-table"],
+      td[class="fluid-cell"] {
+        width: 100% !important;
+        padding: 20px 0px 20px 0px !important;
+      }
+
+      img[class="fluid-image"] {
+        width: 100% !important;
+        height: auto !important;
+      }
+    }
+  </style>
+
+
+	
+	
+	
+	
+</head>
+
+<body class="body" bgcolor="#ffffff">
+  <!--[if mso]>
+<style type="text/css">
+body, table, td {font-family: Arial, sans-serif !important;}
+</style>
+<![endif]-->
+
+<!--========================
+  /// HEADER STARTS HERE ///
+  ====================== -->
+
+
+	   <!-- Header -->
+  <table class="full" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+    <tr>
+      <td align="center" bgcolor="#ffffff">
+
+ 
+      <table align="center" bgcolor="#ffffff" width="100%" border="0" cellspacing="0" cellpadding="0">
+   
+    <tr>
+      <td align="center">
+        <table align="center" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="600" align="center">
+                
+
+                         <tr>
+                          <td align="center" bgcolor="#1e1e1e">
+							   <a href="https://www.globusjourneys.com/tour/asia/">
+							  <img src="https://images.globusfamily.com/ecommunications/Email/Globus/2024/2024_Globus_Email_Asia_Launch_June_WK1/images/Header2.jpg" width="600" style="width:100%;max-width:600px;" alt="Globus" /></a>
+							  
+							  
+					
+      </td>
+				</tr></td></tr>
+          </table></td></tr></table></td></tr></table>
+ <!--end Header-->
+
+ <!--========================
+  /// HEADER ENDS HERE ///
+  ====================== -->
+	
+	
+	<!--============================
+  /// 1ST INTRO P STARTS HERE ///
+  ============================ -->
+			
+<!--Promo With Button Gray-->
+  <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" class="full">
+	  
+    <tr>
+      <td align="center">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+			
+         
+          <tr>
+            <td bgcolor="#1e1e1e" >
+  
+              <table class="table-inner" width="90%" align="center" border="0" cellpadding="0" cellspacing="0">
+              
+              
+                                       
+                <tr>
+                	
+                	<td width="600" align="center" valign="top" ><table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tbody>
+      
+      
+	 
+      
+        <tr><td align="center"><table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tbody>
+	  
+	    <tr><td height="20">&nbsp;</td></tr>
+	  
+	  
+                                                  <tr>
+                                              <td height="10" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                                          </tr>
+	  
+	   
+	  <tr>
+                                              <td height="10" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                                          </tr>
+    
+    <tr>
+                           <td  align="center" valign="top" style="color:#ffffff;  font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 140%; line-height: 37px;"  class="open"><span style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 140%; line-height: 37px; color:#ffffff; " class="open">Golden Buddhas or limestone caves? Quiet afternoons in a Japanese garden, a walk through a farming village or gusty speeds of a bullet train? The clatter of rickshaw traffic or the silent wake of a fisherman’s boat? The glitzy skyscrapers of Dubai or the silk cotton trees of Angkor? 
+                        
+                        
+                      </td>
+                      </tr>
+
+                      <tr>
+                                              <td height="20" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                                          </tr>
+    
+    <tr>
+                           <td  align="center" valign="top" style="color:#ffffff;  font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 140%; line-height: 37px;"  class="open"><span style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 140%; line-height: 37px; color:#ffffff; " class="open">Old, new, past and future blend together in harmony for “wow” moments galore in the legendary cities and lush landscapes on an Asia tour.
+                        
+                        
+                      </td>
+                      </tr>
+	
+	  
+	
+      
+  <tr><td height="20">&nbsp;</td></tr>
+	  
+        
+  </tbody>
+</table>
+</td></tr>
+    
+					  </tbody></table>  </td>
+          </tr>
+      </table>  
+  
+</td>
+          </tr>
+
+</table></td></tr>
+ 
+</table>
+
+<!--============================
+  /// 1ST INTRO P ENDS HERE ///
+  ========================== -->
+
+  <!--============================
+  /// 2ND INTRO P STARTS HERE ///
+  ============================ -->
+			
+<!--Promo With Button Gray-->
+  <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" class="full">
+	  
+    <tr>
+      <td align="center">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+			
+         
+          <tr>
+            <td bgcolor="#ffffff" >
+  
+              <table class="table-inner" width="90%" align="center" border="0" cellpadding="0" cellspacing="0">
+              
+              
+                                       
+                <tr>
+                	
+                	<td width="600" align="center" valign="top" ><table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tbody>
+      
+      
+	 
+      
+        <tr><td align="center"><table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tbody>
+	  
+	    <tr><td height="30">&nbsp;</td></tr>
+	  
+	  	<tr>
+                                           <tr>          <td align="center" valign="top" style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:34px; line-height: 49px; color: #333333; text-transform: uppercase; font-weight: 100;" class="open"><span style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:26px; line-height: 39px; color: #333333; text-transform: uppercase; font-weight: 100;" class="open">A Touch of Asia</span>
+                                               
+                                               
+                                               
+                        
+							</td></tr>       <tr>
+                                              <td height="10" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                                          </tr>
+	  
+	   
+	  <tr>
+                                              <td height="10" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                                          </tr>
+    
+    <tr>
+                           <td  align="center" valign="top" style="color:#333333;  font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 140%; line-height: 37px;"  class="open"><span style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 140%; line-height: 37px; color:#333333; " class="open">When you venture to Asia with Globus, we’ll deliver experiences that touch your heart and give you goosebumps with cultural textures that span ancient and modern worlds.
+                        
+                        
+                      </td>
+                      </tr>
+	
+	  
+	
+      
+  <tr><td height="20">&nbsp;</td></tr>
+	  
+        
+  </tbody>
+</table>
+</td></tr>
+    
+					  </tbody></table>  </td>
+          </tr>
+      </table>  
+  
+</td>
+          </tr>
+
+</table></td></tr>
+ 
+</table>
+
+<!--============================
+  /// 2ND INTRO P ENDS HERE ///
+  ========================== -->
+						
+  <!--==================================
+  /// INDEPENDENCE HEADER START HERE ///
+  ================================== -->
+  <!-- Header -->
+  <table class="full" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+    <tr>
+      <td align="center" bgcolor="#ffffff">
+
+ 
+      <table align="center" bgcolor="#ffffff" width="100%" border="0" cellspacing="0" cellpadding="0">
+   
+    <tr>
+      <td align="center">
+        <table align="center" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="600" align="center">
+                
+
+                         <tr>
+                          <td align="center" bgcolor="#1e1e1e">
+							   
+							  <img src="https://images.globusfamily.com/ecommunications/Email/Globus/2024/2024_Globus_Email_Asia_Launch_June_WK1/images/IndependenceHeader.jpg" width="600" style="width:100%;max-width:600px;" alt="Globus" />
+							  
+							  
+					
+      </td>
+				</tr></td></tr>
+          </table></td></tr></table></td></tr></table>
+ <!--end Header-->
+
+
+  <!--==================================
+  /// INDEPENDENCE HEADER ENDS HERE ///
+  ================================== -->
+
+  <!--==================================
+  /// LOCATION 1 AND 2 STARTS HERE ///
+  ================================== -->
+    
+<!--2 tours with buttons-->
+  <table align="center" bgcolor="#ffffff" width="100%" border="0" cellspacing="0" cellpadding="0" class="full">
+    <tr>
+      <td align="center">
+        <table align="center" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="600" align="center" bgcolor="#ffffff">
+              <table bgcolor="#ffffff" align="center" class="table-inner" width="100%" border="0" cellspacing="0"
+                cellpadding="0">
+                <tr>
+                  <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+
+
+
+                    <!--left-->
+                    <div style="display:inline-block;vertical-align:top;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td width="300" align="center">
+                            <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+
+
+                              <tr>
+                                <td height="27">&nbsp;</td>
+                              </tr>
+
+                              <!--img-->
+                              <tr>
+                                <td align="center" valign="top" width="300">
+                                  <a href="https://www.globusjourneys.com/tour/independent-cambodia-thailand-from-angkor-wat-to-the-beaches-of-phuket/IAT4/?season=2025"><img
+                                      style="display:block; line-height:0px; font-size:0px; border:0px; max-width: 280"
+                                      src="https://images.globusfamily.com/ecommunications/Email/Globus/2024/2024_Globus_Email_Asia_Launch_June_WK1/images/p1.jpg"
+                                      width="280" alt="Picture-Perfect Poses"></a>
+                                </td>
+                              </tr>
+                              <!--end img-->
+
+
+                              <!--tour name-->
+                              <tr>
+                                <td height="27" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td width="292" align="center" valign="top"
+                                  style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:22px; line-height: 39px; color: #691b16; font-weight: 100;"
+                                  class="open">
+                                  <span
+                                    style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:22px; line-height: 39px; color: #691b16; font-weight: 100;"
+                                    class="open">
+                                    Picture-Perfect Poses</span>
+
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td height="10" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                              </tr>
+
+                              <tr>
+                           <td  align="center" valign="top" style="color:#333333;  font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 140%; line-height: 37px;"  class="open"><span style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 140%; line-height: 37px; color:#333333; " class="open">Experience a traditional Khmer <br/> Apsara dance performance in Cambodia.
+                        
+                        
+                      </td>
+                      </tr>
+	
+                      <tr>
+                                <td height="10" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                              </tr>
+
+
+                              <!--link-->
+                              <tr>
+                                <td align="center">
+                                  <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                    <tbody>
+                                      <tr>
+
+                                        <td>
+                                          <!--NEW BUTTON STYLE STARTS-->
+                                      <tr>
+                                        <td width="90">
+                                          <table width="90" border="0" align="center">
+                                            <tbody>
+
+                                              <tr>
+                                                <td align="center">
+                                                  <hr width="90px" color="#691b16" size="1">
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td height="2px" style="font-size: 1px; line-height: 1px;">&nbsp;
+                                                  </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                      <!--title-->
+                                      <tr>
+                                        <td align="center" valign="top"
+                                          style="color:#691b16;  font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; "
+                                          class="open"><span
+                                            style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px;color:#691b16; text-decoration: none;"
+                                            class="open"><strong><a
+                                                href="https://www.globusjourneys.com/tour/independent-cambodia-thailand-from-angkor-wat-to-the-beaches-of-phuket/IAT4/?season=2025"
+                                                style="color:#691b16;  font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; text-decoration: none;"
+                                                class="open">VIEW TOUR</a></strong>
+
+                                          </span>
+
+
+
+
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td width="90">
+                                          <table width="90" border="0" align="center">
+                                            <tbody>
+                                              <tr>
+                                                <td height="2px" style="font-size: 1px; line-height: 1px;">&nbsp;
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                <td align="center">
+                                                  <hr width="90px" color="#691b16" size="1">
+                                                </td>
+                                              </tr>
+
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                      <!--NEW BUTTON STYLE ENDS-->
+                                </td>
+
+                              </tr>
+                              <tr>
+                                <td height="27" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                              </tr>
+
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+
+
+                      </table>
+                  </td>
+                </tr>
+              </table>
+              </div>
+              <!--end left-->
+
+
+
+
+
+
+              <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                    <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+                    <![endif]-->
+
+
+
+
+
+              <!--right-->
+
+              <div style="display:inline-block;vertical-align:top;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td width="300" align="center">
+                      <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+
+
+                        <tr>
+                          <td height="27">&nbsp;</td>
+                        </tr>
+                        <!--img-->
+                        <tr>
+                          <td align="center" valign="top" width="300">
+
+
+
+
+                            <a href="https://www.globusjourneys.com/tour/independent-dubai-city-stay/IAU1/?season=2025"><img
+                                style="display:block; line-height:0px; font-size:0px; border:0px; max-width: 280"
+                                src="https://images.globusfamily.com/ecommunications/Email/Globus/2024/2024_Globus_Email_Asia_Launch_June_WK1/images/p2.jpg"
+                                width="280" alt="Head in the Clouds"></a>
+
+
+
+
+                          </td>
+                        </tr>
+                        <!--end img-->
+
+
+                        <!--tour name-->
+                        <tr>
+                          <td height="27" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td width="292" align="center" valign="top"
+                            style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:22px; line-height: 39px; color: #691b16; font-weight: 100;"
+                            class="open">
+                            <span
+                              style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:22px; line-height: 39px; color: #691b16; font-weight: 100;"
+                              class="open">
+                              Head in the Clouds </span>
+
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td height="10" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                           <td  align="center" valign="top" style="color:#333333;  font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 140%; line-height: 37px;"  class="open"><span style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 140%; line-height: 37px; color:#333333; " class="open">Reach for the sky in Dubai at Burj Khalifa and ascend to the observation deck.
+                        
+                        
+                      </td>
+                      </tr>
+	
+                      <tr>
+                                <td height="10" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                              </tr>
+
+
+                        <tr>
+                          <td align="center">
+                            <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center">
+                              <tbody>
+                                <tr>
+
+                                  <td>
+                                    <!--NEW BUTTON STYLE STARTS-->
+                                <tr>
+                                  <td width="90">
+                                    <table width="90" border="0" align="center">
+                                      <tbody>
+
+                                        <tr>
+                                          <td align="center">
+                                            <hr width="90px" color="#691b16" size="1">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td height="2px" style="font-size: 1px; line-height: 1px;">&nbsp;
+                                            </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <!--title-->
+                                <tr>
+                                  <td align="center" valign="top"
+                                    style="color:#691b16;  font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; "
+                                    class="open"><span
+                                      style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px;color:#691b16; text-decoration: none;"
+                                      class="open"><strong><a
+                                          href="https://www.globusjourneys.com/tour/independent-dubai-city-stay/IAU1/?season=2025"
+                                          style="color:#691b16;  font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; text-decoration: none;"
+                                          class="open">VIEW TOUR</a></strong>
+
+                                    </span>
+
+
+
+
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td width="90">
+                                    <table width="90" border="0" align="center">
+                                      <tbody>
+                                        <tr>
+                                          <td height="2px" style="font-size: 1px; line-height: 1px;">&nbsp;
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center">
+                                            <hr width="90px" color="#691b16" size="1">
+                                          </td>
+                                        </tr>
+
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <!--NEW BUTTON STYLE ENDS-->
+                          </td>
+
+                        </tr>
+
+                        <tr>
+                          <td height="27" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                        </tr>
+
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+
+
+
+
+
+
+          <!--link-->
+
+
+
+
+
+
+        </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  </td>
+  </tr>
+  </table>
+
+  <!--end right-->
+
+
+
+
+
+  </td>
+  </tr>
+  </table>
+
+
+  <!--end 2 tours with buttons -->
+
+
+  <!--==================================
+  /// LOCATION 1 AND 2 ENDS HERE ///
+  ================================== -->
+
+  <!--==================================
+  /// LOCATION 3 AND 4 STARTS HERE ///
+  ================================== -->
+    
+<!--2 tours with buttons-->
+  <table align="center" bgcolor="#ffffff" width="100%" border="0" cellspacing="0" cellpadding="0" class="full">
+    <tr>
+      <td align="center">
+        <table align="center" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="600" align="center" bgcolor="#ffffff">
+              <table bgcolor="#ffffff" align="center" class="table-inner" width="100%" border="0" cellspacing="0"
+                cellpadding="0">
+                <tr>
+                  <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+
+
+
+                    <!--left-->
+                    <div style="display:inline-block;vertical-align:top;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td width="300" align="center">
+                            <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+
+
+                              <tr>
+                                <td height="27">&nbsp;</td>
+                              </tr>
+
+                              <!--img-->
+                              <tr>
+                                <td align="center" valign="top" width="300">
+                                  <a href="https://www.globusjourneys.com/tour/independent-highlights-of-thailand/IAT1/?season=2025"><img
+                                      style="display:block; line-height:0px; font-size:0px; border:0px; max-width: 280"
+                                      src="https://images.globusfamily.com/ecommunications/Email/Globus/2024/2024_Globus_Email_Asia_Launch_June_WK1/images/p3.jpg"
+                                      width="280" alt="Shaman Vibes"></a>
+                                </td>
+                              </tr>
+                              <!--end img-->
+
+
+                              <!--tour name-->
+                              <tr>
+                                <td height="27" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td width="292" align="center" valign="top"
+                                  style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:22px; line-height: 39px; color: #691b16; font-weight: 100;"
+                                  class="open">
+                                  <span
+                                    style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:22px; line-height: 39px; color: #691b16; font-weight: 100;"
+                                    class="open">
+                                    Shaman Vibes</span>
+
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td height="10" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                              </tr>
+
+                              <tr>
+                           <td  align="center" valign="top" style="color:#333333;  font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 140%; line-height: 37px;"  class="open"><span style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 140%; line-height: 37px; color:#333333; " class="open">Find wisdom and the ways of <br/>the ancestors of the Lisu Hill Tribe <br/>when you meet their Shaman.
+                        
+                        
+                      </td>
+                      </tr>
+	
+                      <tr>
+                                <td height="10" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                              </tr>
+
+
+                              <!--link-->
+                              <tr>
+                                <td align="center">
+                                  <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                    <tbody>
+                                      <tr>
+
+                                        <td>
+                                          <!--NEW BUTTON STYLE STARTS-->
+                                      <tr>
+                                        <td width="90">
+                                          <table width="90" border="0" align="center">
+                                            <tbody>
+
+                                              <tr>
+                                                <td align="center">
+                                                  <hr width="90px" color="#691b16" size="1">
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td height="2px" style="font-size: 1px; line-height: 1px;">&nbsp;
+                                                  </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                      <!--title-->
+                                      <tr>
+                                        <td align="center" valign="top"
+                                          style="color:#691b16;  font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; "
+                                          class="open"><span
+                                            style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px;color:#691b16; text-decoration: none;"
+                                            class="open"><strong><a
+                                                href="https://www.globusjourneys.com/tour/independent-highlights-of-thailand/IAT1/?season=2025"
+                                                style="color:#691b16;  font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; text-decoration: none;"
+                                                class="open">VIEW TOUR</a></strong>
+
+                                          </span>
+
+
+
+
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td width="90">
+                                          <table width="90" border="0" align="center">
+                                            <tbody>
+                                              <tr>
+                                                <td height="2px" style="font-size: 1px; line-height: 1px;">&nbsp;
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                <td align="center">
+                                                  <hr width="90px" color="#691b16" size="1">
+                                                </td>
+                                              </tr>
+
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                      <!--NEW BUTTON STYLE ENDS-->
+                                </td>
+
+                              </tr>
+                              <tr>
+                                <td height="27" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                              </tr>
+
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+
+
+                      </table>
+                  </td>
+                </tr>
+              </table>
+              </div>
+              <!--end left-->
+
+
+
+
+
+
+              <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                    <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+                    <![endif]-->
+
+
+
+
+
+              <!--right-->
+
+              <div style="display:inline-block;vertical-align:top;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td width="300" align="center">
+                      <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+
+
+                        <tr>
+                          <td height="27">&nbsp;</td>
+                        </tr>
+                        <!--img-->
+                        <tr>
+                          <td align="center" valign="top" width="300">
+
+
+
+
+                            <a href="https://www.globusjourneys.com/tour/independent-wonders-of-india-nepal/IAP1/?season=2024"><img
+                                style="display:block; line-height:0px; font-size:0px; border:0px; max-width: 280"
+                                src="https://images.globusfamily.com/ecommunications/Email/Globus/2024/2024_Globus_Email_Asia_Launch_June_WK1/images/p4.jpg"
+                                width="280" alt="Buddha Abounds"></a>
+
+
+
+
+                          </td>
+                        </tr>
+                        <!--end img-->
+
+
+                        <!--tour name-->
+                        <tr>
+                          <td height="27" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td width="292" align="center" valign="top"
+                            style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:22px; line-height: 39px; color: #691b16; font-weight: 100;"
+                            class="open">
+                            <span
+                              style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:22px; line-height: 39px; color: #691b16; font-weight: 100;"
+                              class="open">
+                              Buddha Abounds </span>
+
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td height="10" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                           <td  align="center" valign="top" style="color:#333333;  font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 140%; line-height: 37px;"  class="open"><span style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 140%; line-height: 37px; color:#333333; " class="open">Follow the steps of Tibetans on<br/>a pilgrimage to the Boudhanath <br/> Stupa in Nepal.
+                        
+                      </td>
+                      </tr>
+	
+                      <tr>
+                                <td height="10" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                              </tr>
+
+
+                        <tr>
+                          <td align="center">
+                            <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center">
+                              <tbody>
+                                <tr>
+
+                                  <td>
+                                    <!--NEW BUTTON STYLE STARTS-->
+                                <tr>
+                                  <td width="90">
+                                    <table width="90" border="0" align="center">
+                                      <tbody>
+
+                                        <tr>
+                                          <td align="center">
+                                            <hr width="90px" color="#691b16" size="1">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td height="2px" style="font-size: 1px; line-height: 1px;">&nbsp;
+                                            </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <!--title-->
+                                <tr>
+                                  <td align="center" valign="top"
+                                    style="color:#691b16;  font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; "
+                                    class="open"><span
+                                      style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px;color:#691b16; text-decoration: none;"
+                                      class="open"><strong><a
+                                          href="https://www.globusjourneys.com/tour/independent-wonders-of-india-nepal/IAP1/?season=2024"
+                                          style="color:#691b16;  font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; text-decoration: none;"
+                                          class="open">VIEW TOUR</a></strong>
+
+                                    </span>
+
+
+
+
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td width="90">
+                                    <table width="90" border="0" align="center">
+                                      <tbody>
+                                        <tr>
+                                          <td height="2px" style="font-size: 1px; line-height: 1px;">&nbsp;
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center">
+                                            <hr width="90px" color="#691b16" size="1">
+                                          </td>
+                                        </tr>
+
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <!--NEW BUTTON STYLE ENDS-->
+                          </td>
+
+                        </tr>
+
+                        <tr>
+                          <td height="27" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                        </tr>
+
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+
+
+
+
+
+
+          <!--link-->
+
+
+
+
+
+
+        </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  </td>
+  </tr>
+  </table>
+
+  <!--end right-->
+
+
+
+
+
+  </td>
+  </tr>
+  </table>
+
+
+  <!--end 2 tours with buttons -->
+
+
+  <!--==================================
+  /// LOCATION 3 AND 4 ENDS HERE ///
+  ================================== -->
+
+  <!--==================================
+  /// CLASSIC HEADER START HERE ///
+  ================================== -->
+  <!-- Header -->
+  <table class="full" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+    <tr>
+      <td align="center" bgcolor="#ffffff">
+
+ 
+      <table align="center" bgcolor="#ffffff" width="100%" border="0" cellspacing="0" cellpadding="0">
+   
+    <tr>
+      <td align="center">
+        <table align="center" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="600" align="center">
+                
+
+                         <tr>
+                          <td align="center" bgcolor="#1e1e1e">
+							   
+							  <img src="https://images.globusfamily.com/ecommunications/Email/Globus/2024/2024_Globus_Email_Asia_Launch_June_WK1/images/ClassicHeader.jpg" width="600" style="width:100%;max-width:600px;" alt="Globus" />
+							  
+							  
+					
+      </td>
+				</tr></td></tr>
+          </table></td></tr></table></td></tr></table>
+ <!--end Header-->
+
+
+  <!--==================================
+  /// INDEPENDENCE HEADER ENDS HERE ///
+  ================================== -->
+
+  <!--==================================
+  /// LOCATION 5 AND 6 STARTS HERE ///
+  ================================== -->
+    
+<!--2 tours with buttons-->
+  <table align="center" bgcolor="#ffffff" width="100%" border="0" cellspacing="0" cellpadding="0" class="full">
+    <tr>
+      <td align="center">
+        <table align="center" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="600" align="center" bgcolor="#ffffff">
+              <table bgcolor="#ffffff" align="center" class="table-inner" width="100%" border="0" cellspacing="0"
+                cellpadding="0">
+                <tr>
+                  <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+
+
+
+                    <!--left-->
+                    <div style="display:inline-block;vertical-align:top;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td width="300" align="center">
+                            <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+
+
+                              <tr>
+                                <td height="27">&nbsp;</td>
+                              </tr>
+
+                              <!--img-->
+                              <tr>
+                                <td align="center" valign="top" width="300">
+                                  <a href="https://www.globusjourneys.com/tour/alluring-vietnam-the-temples-of-angkor-with-bangkok/OHE/?season=2025"><img
+                                      style="display:block; line-height:0px; font-size:0px; border:0px; max-width: 280"
+                                      src="https://images.globusfamily.com/ecommunications/Email/Globus/2024/2024_Globus_Email_Asia_Launch_June_WK1/images/p5.jpg"
+                                      width="280" alt="Timeless Temples"></a>
+                                </td>
+                              </tr>
+                              <!--end img-->
+
+
+                              <!--tour name-->
+                              <tr>
+                                <td height="27" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td width="292" align="center" valign="top"
+                                  style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:22px; line-height: 39px; color: #691b16; font-weight: 100;"
+                                  class="open">
+                                  <span
+                                    style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:22px; line-height: 39px; color: #691b16; font-weight: 100;"
+                                    class="open">
+                                    Timeless Temples</span>
+
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td height="10" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                              </tr>
+
+                              <tr>
+                           <td  align="center" valign="top" style="color:#333333;  font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 140%; line-height: 37px;"  class="open"><span style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 140%; line-height: 37px; color:#333333; " class="open">Visit Angor Wat – the size,<br/> the scale and the “wow” will be 
+unmatched!
+                        
+                        
+                      </td>
+                      </tr>
+	
+                      <tr>
+                                <td height="10" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                              </tr>
+
+
+                              <!--link-->
+                              <tr>
+                                <td align="center">
+                                  <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                    <tbody>
+                                      <tr>
+
+                                        <td>
+                                          <!--NEW BUTTON STYLE STARTS-->
+                                      <tr>
+                                        <td width="90">
+                                          <table width="90" border="0" align="center">
+                                            <tbody>
+
+                                              <tr>
+                                                <td align="center">
+                                                  <hr width="90px" color="#691b16" size="1">
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td height="2px" style="font-size: 1px; line-height: 1px;">&nbsp;
+                                                  </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                      <!--title-->
+                                      <tr>
+                                        <td align="center" valign="top"
+                                          style="color:#691b16;  font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; "
+                                          class="open"><span
+                                            style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px;color:#691b16; text-decoration: none;"
+                                            class="open"><strong><a
+                                                href="https://www.globusjourneys.com/tour/alluring-vietnam-the-temples-of-angkor-with-bangkok/OHE/?season=2025"
+                                                style="color:#691b16;  font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; text-decoration: none;"
+                                                class="open">VIEW TOUR</a></strong>
+
+                                          </span>
+
+
+
+
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td width="90">
+                                          <table width="90" border="0" align="center">
+                                            <tbody>
+                                              <tr>
+                                                <td height="2px" style="font-size: 1px; line-height: 1px;">&nbsp;
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                <td align="center">
+                                                  <hr width="90px" color="#691b16" size="1">
+                                                </td>
+                                              </tr>
+
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                      <!--NEW BUTTON STYLE ENDS-->
+                                </td>
+
+                              </tr>
+                              <tr>
+                                <td height="27" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                              </tr>
+
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+
+
+                      </table>
+                  </td>
+                </tr>
+              </table>
+              </div>
+              <!--end left-->
+
+
+
+
+
+
+              <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                    <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+                    <![endif]-->
+
+
+
+
+
+              <!--right-->
+
+              <div style="display:inline-block;vertical-align:top;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td width="300" align="center">
+                      <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+
+
+                        <tr>
+                          <td height="27">&nbsp;</td>
+                        </tr>
+                        <!--img-->
+                        <tr>
+                          <td align="center" valign="top" width="300">
+
+
+
+
+                            <a href="https://www.globusjourneys.com/tour/icons-of-india-the-taj-tigers-beyond/OD/?season=2024"><img
+                                style="display:block; line-height:0px; font-size:0px; border:0px; max-width: 280"
+                                src="https://images.globusfamily.com/ecommunications/Email/Globus/2024/2024_Globus_Email_Asia_Launch_June_WK1/images/p6.jpg"
+                                width="280" alt="Earn Your Stripes"></a>
+
+
+
+
+                          </td>
+                        </tr>
+                        <!--end img-->
+
+
+                        <!--tour name-->
+                        <tr>
+                          <td height="27" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td width="292" align="center" valign="top"
+                            style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:22px; line-height: 39px; color: #691b16; font-weight: 100;"
+                            class="open">
+                            <span
+                              style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:22px; line-height: 39px; color: #691b16; font-weight: 100;"
+                              class="open">
+                              Earn Your Stripes</span>
+
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td height="10" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                           <td  align="center" valign="top" style="color:#333333;  font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 140%; line-height: 37px;"  class="open"><span style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 140%; line-height: 37px; color:#333333; " class="open">On a game drive through <br/> Ranthambore National Park in India, <br/>in search of the Bengal Tiger.
+                        
+                        
+                      </td>
+                      </tr>
+	
+                      <tr>
+                                <td height="10" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                              </tr>
+
+
+                        <tr>
+                          <td align="center">
+                            <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center">
+                              <tbody>
+                                <tr>
+
+                                  <td>
+                                    <!--NEW BUTTON STYLE STARTS-->
+                                <tr>
+                                  <td width="90">
+                                    <table width="90" border="0" align="center">
+                                      <tbody>
+
+                                        <tr>
+                                          <td align="center">
+                                            <hr width="90px" color="#691b16" size="1">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td height="2px" style="font-size: 1px; line-height: 1px;">&nbsp;
+                                            </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <!--title-->
+                                <tr>
+                                  <td align="center" valign="top"
+                                    style="color:#691b16;  font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; "
+                                    class="open"><span
+                                      style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px;color:#691b16; text-decoration: none;"
+                                      class="open"><strong><a
+                                          href="https://www.globusjourneys.com/tour/icons-of-india-the-taj-tigers-beyond/OD/?season=2024"
+                                          style="color:#691b16;  font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; text-decoration: none;"
+                                          class="open">VIEW TOUR</a></strong>
+
+                                    </span>
+
+
+
+
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td width="90">
+                                    <table width="90" border="0" align="center">
+                                      <tbody>
+                                        <tr>
+                                          <td height="2px" style="font-size: 1px; line-height: 1px;">&nbsp;
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center">
+                                            <hr width="90px" color="#691b16" size="1">
+                                          </td>
+                                        </tr>
+
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <!--NEW BUTTON STYLE ENDS-->
+                          </td>
+
+                        </tr>
+
+                        <tr>
+                          <td height="27" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                        </tr>
+
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+
+
+
+
+
+
+          <!--link-->
+
+
+
+
+
+
+        </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  </td>
+  </tr>
+  </table>
+
+  <!--end right-->
+
+
+
+
+
+  </td>
+  </tr>
+  </table>
+
+
+  <!--end 2 tours with buttons -->
+
+
+  <!--==================================
+  /// LOCATION 5 AND 6 ENDS HERE ///
+  ================================== -->
+
+  <!--==================================
+  /// LOCATION 7 AND 8 STARTS HERE ///
+  ================================== -->
+    
+<!--2 tours with buttons-->
+  <table align="center" bgcolor="#ffffff" width="100%" border="0" cellspacing="0" cellpadding="0" class="full">
+    <tr>
+      <td align="center">
+        <table align="center" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="600" align="center" bgcolor="#ffffff">
+              <table bgcolor="#ffffff" align="center" class="table-inner" width="100%" border="0" cellspacing="0"
+                cellpadding="0">
+                <tr>
+                  <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+
+
+
+                    <!--left-->
+                    <div style="display:inline-block;vertical-align:top;">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td width="300" align="center">
+                            <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+
+
+                              <tr>
+                                <td height="27">&nbsp;</td>
+                              </tr>
+
+                              <!--img-->
+                              <tr>
+                                <td align="center" valign="top" width="300">
+                                  <a href="https://www.globusjourneys.com/tour/icons-of-india-the-taj-tigers-beyond-with-mumbai-varanasi-kathmandu/ODY8/?season=2025"><img
+                                      style="display:block; line-height:0px; font-size:0px; border:0px; max-width: 280"
+                                      src="https://images.globusfamily.com/ecommunications/Email/Globus/2024/2024_Globus_Email_Asia_Launch_June_WK1/images/p7.jpg"
+                                      width="280" alt="Ties that Bind"></a>
+                                </td>
+                              </tr>
+                              <!--end img-->
+
+
+                              <!--tour name-->
+                              <tr>
+                                <td height="27" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td width="292" align="center" valign="top"
+                                  style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:22px; line-height: 39px; color: #691b16; font-weight: 100;"
+                                  class="open">
+                                  <span
+                                    style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:22px; line-height: 39px; color: #691b16; font-weight: 100;"
+                                    class="open">
+                                    Ties that Bind</span>
+
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td height="10" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                              </tr>
+
+                              <tr>
+                           <td  align="center" valign="top" style="color:#333333;  font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 140%; line-height: 37px;"  class="open"><span style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 140%; line-height: 37px; color:#333333; " class="open">Dine in the home of Indian 
+nobility <br/> and take part in a suri- and <br/>turban-tying demonstration.
+                        
+                        
+                      </td>
+                      </tr>
+	
+                      <tr>
+                                <td height="10" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                              </tr>
+
+
+                              <!--link-->
+                              <tr>
+                                <td align="center">
+                                  <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                    <tbody>
+                                      <tr>
+
+                                        <td>
+                                          <!--NEW BUTTON STYLE STARTS-->
+                                      <tr>
+                                        <td width="90">
+                                          <table width="90" border="0" align="center">
+                                            <tbody>
+
+                                              <tr>
+                                                <td align="center">
+                                                  <hr width="90px" color="#691b16" size="1">
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td height="2px" style="font-size: 1px; line-height: 1px;">&nbsp;
+                                                  </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                      <!--title-->
+                                      <tr>
+                                        <td align="center" valign="top"
+                                          style="color:#691b16;  font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; "
+                                          class="open"><span
+                                            style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px;color:#691b16; text-decoration: none;"
+                                            class="open"><strong><a
+                                                href="https://www.globusjourneys.com/tour/icons-of-india-the-taj-tigers-beyond-with-mumbai-varanasi-kathmandu/ODY8/?season=2025"
+                                                style="color:#691b16;  font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; text-decoration: none;"
+                                                class="open">VIEW TOUR</a></strong>
+
+                                          </span>
+
+
+
+
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td width="90">
+                                          <table width="90" border="0" align="center">
+                                            <tbody>
+                                              <tr>
+                                                <td height="2px" style="font-size: 1px; line-height: 1px;">&nbsp;
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                <td align="center">
+                                                  <hr width="90px" color="#691b16" size="1">
+                                                </td>
+                                              </tr>
+
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                      <!--NEW BUTTON STYLE ENDS-->
+                                </td>
+
+                              </tr>
+                              <tr>
+                                <td height="27" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                              </tr>
+
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+
+
+                      </table>
+                  </td>
+                </tr>
+              </table>
+              </div>
+              <!--end left-->
+
+
+
+
+
+
+              <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                    <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+                    <![endif]-->
+
+
+
+
+
+              <!--right-->
+
+              <div style="display:inline-block;vertical-align:top;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td width="300" align="center">
+                      <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+
+
+                        <tr>
+                          <td height="27">&nbsp;</td>
+                        </tr>
+                        <!--img-->
+                        <tr>
+                          <td align="center" valign="top" width="300">
+
+
+
+
+                            <a href="https://www.globusjourneys.com/tour/visions-of-japan/OP/?season=2024"><img
+                                style="display:block; line-height:0px; font-size:0px; border:0px; max-width: 280"
+                                src="https://images.globusfamily.com/ecommunications/Email/Globus/2024/2024_Globus_Email_Asia_Launch_June_WK1/images/p8.jpg"
+                                width="280" alt="Deer to Your Heart"></a>
+
+
+
+
+                          </td>
+                        </tr>
+                        <!--end img-->
+
+
+                        <!--tour name-->
+                        <tr>
+                          <td height="27" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td width="292" align="center" valign="top"
+                            style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:22px; line-height: 39px; color: #691b16; font-weight: 100;"
+                            class="open">
+                            <span
+                              style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:22px; line-height: 39px; color: #691b16; font-weight: 100;"
+                              class="open">
+                              Deer to Your Heart</span>
+
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td height="10" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                           <td  align="center" valign="top" style="color:#333333;  font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 140%; line-height: 37px;"  class="open"><span style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 140%; line-height: 37px; color:#333333; " class="open">Temples, shrines & free-roaming <br/> deer, oh my! That’s what’s 
+waiting at Nara Park, Japan.
+                        
+                      </td>
+                      </tr>
+	
+                      <tr>
+                                <td height="10" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                              </tr>
+
+
+                        <tr>
+                          <td align="center">
+                            <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center">
+                              <tbody>
+                                <tr>
+
+                                  <td>
+                                    <!--NEW BUTTON STYLE STARTS-->
+                                <tr>
+                                  <td width="90">
+                                    <table width="90" border="0" align="center">
+                                      <tbody>
+
+                                        <tr>
+                                          <td align="center">
+                                            <hr width="90px" color="#691b16" size="1">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td height="2px" style="font-size: 1px; line-height: 1px;">&nbsp;
+                                            </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <!--title-->
+                                <tr>
+                                  <td align="center" valign="top"
+                                    style="color:#691b16;  font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; "
+                                    class="open"><span
+                                      style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px;color:#691b16; text-decoration: none;"
+                                      class="open"><strong><a
+                                          href="https://www.globusjourneys.com/tour/visions-of-japan/OP/?season=2024"
+                                          style="color:#691b16;  font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; text-decoration: none;"
+                                          class="open">VIEW TOUR</a></strong>
+
+                                    </span>
+
+
+
+
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td width="90">
+                                    <table width="90" border="0" align="center">
+                                      <tbody>
+                                        <tr>
+                                          <td height="2px" style="font-size: 1px; line-height: 1px;">&nbsp;
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center">
+                                            <hr width="90px" color="#691b16" size="1">
+                                          </td>
+                                        </tr>
+
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <!--NEW BUTTON STYLE ENDS-->
+                          </td>
+
+                        </tr>
+
+                        <tr>
+                          <td height="27" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                        </tr>
+
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+
+
+
+
+
+
+          <!--link-->
+
+
+
+
+
+
+        </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  </td>
+  </tr>
+  </table>
+
+  <!--end right-->
+
+
+
+
+
+  </td>
+  </tr>
+  </table>
+
+
+  <!--end 2 tours with buttons -->
+
+
+  <!--==================================
+  /// LOCATION 7 AND 8 ENDS HERE ///
+  ================================== -->
+	
+	
+  <!--============================
+  /// 2025 TOURS P STARTS HERE ///
+  ============================ -->
+			
+<!--Promo With Button Gray-->
+  <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" class="full">
+	  
+    <tr>
+      <td align="center">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+			
+         
+          <tr>
+            <td bgcolor="#ffffff" >
+  
+              <table class="table-inner" width="90%" align="center" border="0" cellpadding="0" cellspacing="0">
+              
+              
+                                       
+                <tr>
+                	
+                	<td width="600" align="center" valign="top" ><table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tbody>
+      
+      
+	 
+      
+        <tr><td align="center"><table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tbody>
+	  
+	    <tr><td height="30">&nbsp;</td></tr>
+	  
+	  	<tr>
+                                           <tr>          <td align="center" valign="top" style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:34px; line-height: 49px; color: #691b16; text-transform: uppercase; font-weight: 100;" class="open"><span style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:26px; line-height: 39px; color: #691b16; text-transform: uppercase; font-weight: 100;" class="open">Dim Sum and Then Some!</span>
+                                               
+                                               
+                                               
+                        
+							</td></tr>       <tr>
+                                              <td height="10" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                                          </tr>
+	  
+	   
+	  <tr>
+                                              <td height="10" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                                          </tr>
+    
+    <tr>
+                           <td  align="center" valign="top" style="color:#333333;  font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:20px; mso-line-height: exactly; line-height: 140%; line-height: 37px;"  class="open"><span style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:20px; mso-line-height: exactly; line-height: 140%; line-height: 37px; color:#333333; " class="open">View all Globus Asia vacations – from tours to 
+independent City Stays – available in 2025!
+                        
+                        
+                      </td>
+                      </tr>
+	
+                      <tr>
+                                              <td height="20" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                                          </tr>
+
+                                          <!--Button-->
+                                        <table border="0"  class="textbutton"
+                                          align="center" style="border: 2px solid #691b16">
+                                          <tbody>
+                                            <tr>
+                                              <td height="55" align="center"
+                                                style="padding-left: 60px;padding-right: 60px; color:#691b16;  font-family: Arial, sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none;">
+                                                <a href="https://www.globusjourneys.com/tour/asia/"
+                                                  style="color:#691b16;  font-family: Arial, sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none;"><span
+                                                    style="color:#691b16;  font-family: Arial, sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none;"><strong>FIND 2025 TOURS</strong></span></a>
+                                              </td>
+                                            </tr>
+
+
+
+                                          </tbody>
+                                        </table>
+
+                                        <!--End Button-->
+
+	
+      
+  <tr><td height="20">&nbsp;</td></tr>
+	  
+        
+  </tbody>
+</table>
+</td></tr>
+    
+					  </tbody></table>  </td>
+          </tr>
+      </table>  
+  
+</td>
+          </tr>
+
+</table></td></tr>
+ 
+</table>
+
+<!--============================
+  ///  2025 TOURS P ENDS HERE ///
+  ========================== -->
+
+	
+
+		
+  <!-- Your Coach Awaits ends here -->
+
+
+  <table class="full" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+    <tr>
+      <td align="center" bgcolor="#ffffff">
+
+ 
+      <table align="center" bgcolor="#ffffff" width="100%" border="0" cellspacing="0" cellpadding="0">
+   
+    <tr>
+      <td align="center">
+        <table align="center" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="600" align="center">
+                
+
+                         </td></tr>
+          </table></td></tr></table></td></tr></table>
+ <!--end Header-->
+          
+					  
+					
+<!--Promo With Button Gray-->
+  <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" class="full">
+	  
+    <tr>
+      <td align="center">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" bgcolor="#691b16">
+			
+         
+          <tr>
+            <td bgcolor="#691b16" >
+  
+              <table class="table-inner" width="90%" align="center" border="0" cellpadding="0" cellspacing="0">
+              
+              
+                                       
+                <tr>
+                	
+                	<td width="600" align="center" valign="top" ><table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tbody>
+      
+      
+	  
+     
+ 
+	  	
+	  
+
+
+
+                    
+      
+      
+        <tr><td align="center"><table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tbody>
+	  
+	    <tr><td height="45">&nbsp;</td></tr>
+	  
+	  	<tr>
+                                           <tr>          <td align="center" valign="top" style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:34px; line-height: 49px; color: #ffffff; text-transform: uppercase; font-weight: 100;" class="open"><span style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:26px; line-height: 39px; color: #ffffff; text-transform: uppercase; font-weight: 100;" class="open">Your Coach Awaits </span>
+                                               
+                                               
+                                               
+                        
+							</td></tr>       <tr>
+                                              <td height="10" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                                          </tr>
+	  
+    
+    <tr>
+                           <td  align="center" valign="top" style="color:#ffffff;  font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 140%; line-height: 37px;"  class="open"><span style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 140%; line-height: 37px; color:#ffffff; " class="open">The world is full of remarkable places. To see them is just to see them. To tour them is to truly experience them. Globus delivers ‘wow’ in the world one scene, one sight and one story at a time. Enjoy front row parking, backstage access and rock star status. All included. Open your heart to amazing on a tour that takes you beyond the guidebooks. Beyond the ordinary. Beyond words. Don’t just see the world. Tour it. This is Touring. Beyond.
+</span>
+                        
+                       
+                        
+                        
+                      </td>
+                      </tr>
+	  <tr><td height="27">&nbsp;</td></tr>
+	  
+	  
+	     <tr>
+                          <td align="center" bgcolor="#691b16">
+					  <!--Button-->
+                                        <table border="0"  class="textbutton"
+                                          align="center" style="border: 2px solid #ffffff">
+                                          <tbody>
+                                            <tr>
+                                              <td height="55" align="center"
+                                                style="padding-left: 60px;padding-right: 60px; color:#ffffff;  font-family: Arial, sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none;">
+                                                <a href="https://www.globusjourneys.com/explore-tours/"
+                                                  style="color:#ffffff;  font-family: Arial, sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none;"><span
+                                                    style="color:#ffffff;  font-family: Arial, sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none;"><strong>FIND A TOUR</strong></span></a>
+                                              </td>
+                                            </tr>
+
+
+
+                                          </tbody>
+                                        </table>
+
+                                        <!--End Button-->
+							  
+							  
+							  
+							  
+							  
+					
+                
+		
+      </td>
+				</tr>
+	 
+	  
+	  
+	
+      
+  <tr><td height="45">&nbsp;</td></tr>
+	  
+        
+  </tbody>
+</table>
+</td></tr>
+      
+  
+                  
+                 
+	
+	  
+	  
+
+       
+	   
+					  </tbody></table>  </td>
+          </tr>
+      </table>  
+  
+</td>
+          </tr>
+
+</table></td></tr>
+ 
+</table>
+						
+
+
+      
+  <!-- Your Coach Awaits ends here -->
+
+
+
+
+
+  <!--===========================================
+  /// Take Off with Travel Credit! STARTS HERE ///
+  ============================================ -->
+
+  <!--Gold Box Intro-->
+  <table class="full" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+    <tr>
+      <td align="center">
+        <table align="center" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="600" align="center" bgcolor="#ffffff">
+              <table class="table-inner" width="100%" border="0" align="center" cellpadding="0" cellspacing="0"
+                bgcolor="#ffffff">
+                <tr>
+                  <td align="center">
+                    <table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+
+
+
+                      <tr><td height="33">&nbsp;</td></tr>
+
+
+                      <tr>
+                        <td align="center" valign="middle">
+                          <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center" valign="middle"
+                            style="  border: 1px solid #c0bfbf; ">
+                            <tbody>
+
+
+
+
+                              <tr>
+                                <td height="45" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                              </tr>
+
+
+
+
+
+  <tr>
+                                      <td align="center" style="line-height:0px;"> <a href="https://www.globusjourneys.com/deals/"><img style="display:block; line-height:0px; font-size:0px; border:0px; max-width: 53" src="https://images.globusfamily.com/ecommunications/Email/Globus/2024/2024_Globus_Email_Tour_It_Intro_March_WK1/images/arrow.png" alt="Arrow" width="53" height="auto"></a></td>
+                                    </tr>
+								
+								
+								
+								
+                              <tr>
+                                <td height="17" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                              </tr>
+
+								
+				 <tr>  <td align="center"
+                                style="font-family: Garamond,Times,serif; font-weight: 300; font-style: normal; font-size: 36px; line-height:250%; line-height: 49px;  mso-line-height-rule:exactly; text-decoration: none; color:#691b16;" valign="top">
+                                <span
+                                  style="font-family: Garamond,Times,serif; font-weight: 300; font-style: normal;font-size: 36px; line-height:250%; line-height: 49px; mso-line-height-rule:exactly; text-decoration: none; color:#691b16; ">
+                                  “Tour It” Sales Event
+ 
+					 </span>
+                                               
+                                               
+                                               
+                        
+							</td></tr>
+								
+								
+								
+              <tr>
+                                <td height="10" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                              </tr>
+
+                          
+
+                              <tr>
+                                <td align="center">
+                                  <table width="80%" border="0">
+                                    <tbody>
+                                      <tr>
+                          <td  align="center" valign="top" style="color:#1e1e1e;  font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 140%; line-height: 37px;"  class="open"><span style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 140%; line-height: 37px; color:#1e1e1e; " class="open">Save $700 per couple on select 2024 tours.*
+                        
+								</span>
+                        
+                        
+                      </td>
+                                      </tr>
+										
+										
+											
+                                      <tr>
+                                        <td height="26" style="font-size: 1px; line-height: 1px;">&nbsp;
+
+                                        </td>
+                                      </tr>
+										
+										
+										<tr><td align="center"><!--Button-->
+                                        <table width="190" border="0" bgcolor="#ffffff" class="textbutton"
+                                          align="center" style="border: 2px solid #691b16">
+                                          <tbody>
+                                            <tr>
+                                              <td height="50" align="center"
+                                                style="padding-left: 5px;padding-right: 5px; color:#691b16;  font-family: Arial, sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none;">
+                                                <a href="https://www.globusjourneys.com/deals/"
+                                                  style="padding-left: 5px;padding-right: 5px; color:#691b16;  font-family: Arial, sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none;"><span
+                                                    style="padding-left: 5px;padding-right: 5px; color:#691b16;  font-family: Arial, sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none;"><strong>VIEW SALE</strong></span></a>
+                                              </td>
+                                            </tr>
+
+
+
+                                          </tbody>
+                                        </table>
+
+                                        <!--End Button--></td></tr>
+										
+										
+										
+                                      <tr>
+                                        <td height="45" style="font-size: 1px; line-height: 1px;">&nbsp;
+
+                                        </td>
+                                      </tr>
+
+
+
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+
+
+
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+
+
+
+
+
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td height="57" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                </tr>
+
+
+
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+		
+      
+
+
+   <!-- Header -->
+  <table class="full" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+    <tr>
+      <td align="center" bgcolor="#ffffff">
+
+ 
+      <table align="center" bgcolor="#ffffff" width="100%" border="0" cellspacing="0" cellpadding="0">
+   
+    <tr>
+      <td align="center">
+        <table align="center" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="600" align="center">
+                
+
+                         <tr>
+                          <td align="center" bgcolor="#1e1e1e">
+							   <a href="https://www.globusjourneys.com/explore-tours/">
+							  <img src="https://images.globusfamily.com/ecommunications/Email/Globus/2024/2024_Globus_Email_Western_Canada_Choice_Feature_March_WK1/images/sub.jpg" width="600" style="width:100%;max-width:600px;" alt=" Take Off with Travel Credit" /></a>
+							  
+							  
+							  
+							  
+							  
+							  
+					
+                
+		
+      </td>
+				</tr></td></tr>
+          </table></td></tr></table></td></tr></table>
+ <!--end Header-->
+          
+					  
+					
+<!--Promo With Button Gray-->
+  <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" class="full">
+	  
+    <tr>
+      <td align="center">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" bgcolor="#1e1e1e">
+			
+         
+          <tr>
+            <td bgcolor="#1e1e1e" >
+  
+              <table class="table-inner" width="90%" align="center" border="0" cellpadding="0" cellspacing="0">
+              
+              
+                                       
+                <tr>
+                	
+                	<td width="600" align="center" valign="top" ><table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tbody>
+      
+      
+	  
+     
+ 
+	  	
+	  
+
+
+
+                    
+      
+      
+        <tr><td align="center"><table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tbody>
+	  
+	    <tr><td height="45">&nbsp;</td></tr>
+	  
+	  	<tr>
+                                           <tr>          <td align="center" valign="top" style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:34px; line-height: 49px; color: #ffffff; text-transform: uppercase; font-weight: 100;" class="open"><span style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:26px; line-height: 39px; color: #ffffff; text-transform: uppercase; font-weight: 100;" class="open">Take Off with Travel Credit! </span>
+                                               
+                                               
+                                               
+                        
+							</td></tr>       <tr>
+                                              <td height="10" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+                                          </tr>
+	  
+    
+    <tr>
+                           <td  align="center" valign="top" style="color:#ffffff;  font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 140%; line-height: 37px;"  class="open"><span style="font-family:'Open Sans',Roboto,Arial,sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 140%; line-height: 37px; color:#ffffff; " class="open">Did you know? When you tour the world with us, you receive travel credit (funds) to use on future travel! With hundreds of vacations and nearly 100 years of experience, we’ve paved the perfect path for you to turn dreams into plans. If you might be sitting on travel credit – something we call Welcome Back Credit – and you’d like to have fun with your funds, check your status with us or your Travel Advisor before booking your next tour or cruise! 
+</span>
+                        
+                       
+                        
+                        
+                      </td>
+                      </tr>
+	  <tr><td height="27">&nbsp;</td></tr>
+	  
+	  
+	     <tr>
+                          <td align="center" bgcolor="#1e1e1e">
+					  <!--Button-->
+                                        <table border="0"  class="textbutton"
+                                          align="center" style="border: 2px solid #ffffff">
+                                          <tbody>
+                                            <tr>
+                                              <td height="55" align="center"
+                                                style="padding-left: 60px;padding-right: 60px; color:#ffffff;  font-family: Arial, sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none;">
+                                                <a href="https://www.globusjourneys.com/tour-credit/"
+                                                  style="color:#ffffff;  font-family: Arial, sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none;"><span
+                                                    style="color:#ffffff;  font-family: Arial, sans-serif !important; font-size:16px; mso-line-height: exactly; line-height: 120%; line-height: 16px;  text-decoration: none;"><strong>LEARN MORE</strong></span></a>
+                                              </td>
+                                            </tr>
+
+
+
+                                          </tbody>
+                                        </table>
+
+                                        <!--End Button-->
+							  
+							  
+							  
+							  
+							  
+					
+                
+		
+      </td>
+				</tr>
+	 
+	  
+	  
+	
+      
+  <tr><td height="45">&nbsp;</td></tr>
+	  
+        
+  </tbody>
+</table>
+</td></tr>
+      
+  
+                  
+                 
+	
+	  
+	  
+
+       
+	   
+					  </tbody></table>  </td>
+          </tr>
+      </table>  
+  
+</td>
+          </tr>
+
+</table></td></tr>
+ 
+</table>
+						
+
+<!--=============================================
+  /// Take Off with Travel Credit! ENDS HERE ///
+  =========================================== -->
+      
+ 
+				  
+				
+
+  <!--Globus CSR Footer-->
+  <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+
+    <tr>
+      <td align="center">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+
+
+
+          <td width="320" align="center" bgcolor="#ffffff">
+            <table class="table-inner" width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+
+              <tr>
+                <td height="17">&nbsp;</td>
+              </tr>
+
+              <tr>
+
+
+
+                <td width="280" align="center" valign="top">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                    <tbody>
+
+                      <tr>
+                        <td align="center" valign="middle">
+                          <center>
+                            
+		<a href="https://www.globusjourneys.com"><img
+                                style="display:block; line-height:0px; font-size:0px; border:0px; max-width: 200"
+                                src="https://images.globusfamily.com/ecommunications/Email/Globus/2024/2024_Globus_Email_Tour_It_Intro_March_WK1/images/gL3.png" width="200"
+                                alt="Globus"></a>
+                          </center>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td align="center">
+                          <table width="280px" border="0" align="center" style="width: 100%;">
+                            <tbody>
+                              <tr>
+                                <center>
+
+                                  <hr width="280px" color="#9c9c9c" size="1" style="width: 100%;">
+                                </center>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                     <tr align="center" valign="middle"
+                        style="font-family: Arial, sans-serif; color:#2e74ad; font-size:12px; line-height: 18px; text-decoration: none; mso-line-height: exactly;">
+
+
+                        <td height="28" align="center" valign="middle"><a href="tel:1-866-254-0705"
+                            style="font-family: Arial, sans-serif; color:#333333; font-size:12px; line-height: 18px; text-decoration: none;">866.254.0705</a> <span
+                            style="font-family: Arial, sans-serif; color:#333333; font-size:9px; line-height: 18px;"><span
+                              style="font-family: Arial, sans-serif; color:#333333; font-size:9px; line-height: 18px;"><strong>&nbsp;&bull;&nbsp; </strong>
+                            </span></span><a href="https://www.globusjourneys.com/find-agent/"
+                            style="font-family: Arial, sans-serif; color:#333333; font-size:12px; line-height: 18px; text-decoration: none;">Find An
+                            Advisor</a> <span
+                            style="font-family: Arial, sans-serif; color:#333333; font-size:9px; line-height: 18px;"><strong>&nbsp;&bull;&nbsp;</strong>
+                            </span> <a href="https://www.globusjourneys.com/contact/"
+                            style="font-family: Arial, sans-serif; color:#333333; font-size:12px; line-height: 18px; text-decoration: none;">Get A Quote</a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td align="center">
+                          <table width="280px" border="0" align="center" style="width: 100%;">
+                            <tbody>
+                              <tr>
+                                <center>
+
+                                  <hr width="280px" color="#9c9c9c" size="1" style="width: 100%;">
+                                </center>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="51" align="center" valign="middle">
+                          <table id="Table_01" width="104" height="31" border="0" cellpadding="0" cellspacing="0"
+                            align="center">
+
+                            <tr>
+                              <td align="center" valign="middle">
+                                <a href="https://www.facebook.com/globus/"><img
+                                    src="https://images.globusfamily.com/ecommunications/Email/Globus/2023/2023_Globus_Inspirers_and_Undiscovered_Email_April_WK3/images/fb.png"
+                                    alt="Facebook" border="0" style="display: block;" /></a>
+                              </td>
+
+                              <td align="center" valign="middle">
+                                <a href="https://www.youtube.com/user/GlobusFamily"><img
+                                    src="https://images.globusfamily.com/ecommunications/Email/Globus/2023/2023_Globus_Inspirers_and_Undiscovered_Email_April_WK3/images/yt.png"
+                                    alt="YouTube" border="0" style="display: block;" /></a>
+                              </td>
+                              <td align="center" valign="middle">
+                                <a href="https://www.instagram.com/globustravel/"><img
+                                    src="https://images.globusfamily.com/ecommunications/Email/Globus/2023/2023_Globus_Inspirers_and_Undiscovered_Email_April_WK3/images/insta2.png"
+                                    alt="App Store" border="0" style="display: block;" /></a>
+                              </td>
+                            </tr>
+
+                          </table>
+                        </td>
+                      </tr>
+
+
+
+
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </table>
+      </td>
+    </tr>
+
+  </table>
+
+
+  <!-- End Globus CSR Footer-->
+
+
+
+   <!-- Trust Pilot -->
+  <table class="full" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+    <tr>
+      <td align="center" bgcolor="#ffffff">
+
+ 
+      <table align="center" bgcolor="#ffffff" width="100%" border="0" cellspacing="0" cellpadding="0">
+   
+    <tr>
+      <td align="center">
+        <table align="center" border="0" cellpadding="0" cellspacing="0">
+			<tr><td height="27">&nbsp;</td></tr>
+          <tr>
+            <td width="600" align="center">
+
+                   
+							  
+							 <p
+                      style="font-family: Arial, Arial Black, Tahoma, Trebuchet MS, Verdana, sans-serif; font-size: 12px; color: #aaa; text-decoration: none;">
+                      <a href="https://www.globusjourneys.com/Testimonials/" target="_blank" rel="noopener noreferrer"
+                        style="text-decoration:none;text-underline: none;">
+                        <img
+                          src="https://emailsignature.trustpilot.com/signature/en-US/2/564f8e5b0000ff000585c4ef/text.png"
+                          border="0" height="16" style="max-height: 16px;border: none;" alt="Trustpilot rating"><br>
+                        <img
+                          src="https://emailsignature.trustpilot.com/signature/en-US/2/564f8e5b0000ff000585c4ef/stars.png"
+                          border="0" width="160" style="max-width: 160px; width: 100%;border: none;"
+                          alt="Trustpilot Stars"></a>
+                      <br>
+                      <a href="https://www.globusjourneys.com/Testimonials/" target="_blank" rel="noopener noreferrer"
+                        style="text-decoration:none;text-underline: none;"><img
+                          src="https://emailsignature.trustpilot.com/brand/s/2/logo.png" border="0" width="79"
+                          style="max-width: 79px; width: 100%;border: none;" alt="Trustpilot Logo"></a>
+                    </p>
+							 </td>
+  						</tr>
+		
+     
+          </table></td></tr></table></td></tr></table>
+ <!--end Trust Pilot-->
+
+     
+     
+
+      <!-- Disclaimer -->
+  <table  align="center" width="100%" border="0" cellspacing="0" cellpadding="0" class="full" bgcolor="#ffffff">
+    <tr>
+      <td align="center">
+        <table align="center" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="600" align="center">
+              <table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+
+	         
+    <tr>
+      <td style="font-family: Arial, 'sans-serif' !important; font-weight:normal; font-size:11px; color:#4f4f4f" class="foot"> <!--disclaimer text--><span style="font-family: Arial, 'sans-serif' !important; font-weight:normal; font-size:11px; color:#4f4f4f"><br/><br/>
+        <sup>*</sup> Book and deposit a select 2024 Globus Tour to save an additional $350 off per person on the land price. Booking must be made and under deposit between May 1, 2024 - June 30, 2024, for select travel dates in 2024. Offer applies to select tours only. Does not apply to Custom Tours, Escapes by Globus or Independence by Globus single city stays.  Offer combinable with valid Welcome Back Credits and select partner promotions. Applies to new bookings only. The applicable promotional discount will apply to Groups of 8 or more who provide their Group Block Deposit within the promotion's booking dates and will apply to all individual members of the Group until the due date of the passenger names/non-refundable individual deposits. Offer reliant on space availability. Full cancellation penalties will apply. Additional restrictions may apply. May be withdrawn any time. Available from participating GFOB offices only. Promotional offer is in USD. PRMX0836
+
+<br/><br/>
+
+
+
+
+		  
+</span>
+
+  <br/><br/>
+		  
+		  
+<div style="Arial, sans-serif !important; font-weight:normal; font-size:11px; color:#333333" class="foot">
+      
+  
+      
+ 
+
+	  
+	

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bianca Lee | Front-End Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- NAV SECTION STARTS HERE -->
+      <nav class="navbar">
+        <div class="logo">Bianca Lee.</div>
+
+        <ul class="nav__links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- NAV SECTION ENDS HERE -->
+    </header>
+
+    <!-- HERO SECTION STARTS HERE -->
+
+    <section id="home" class="hero">
+      <div class="hero__content">
+        <p class="hero__intro">Hello, I'm <strong>Bianca</strong></p>
+
+        <h2 class="hero__role">Front-End Developer</h2>
+
+        <h1 class="hero__title">
+          Building beautiful digital experiences<span class="title__accent"
+            >.</span
+          >
+        </h1>
+
+        <p class="hero__description">
+          I bring creative ideas to life through thoughtful design and front-end
+          development.
+        </p>
+
+        <div class="hero__buttons">
+          <a href="#portfolio" class="contact__button contact__button--primary">
+            View My Work
+          </a>
+
+          <a
+            href="images/Bianca_Lee_Resume_Header_Fixed.pdf"
+            class="contact__button contact__button--secondary"
+            download
+          >
+            Download Résumé
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HERO SECTION ENDS HERE -->
+
+    <!-- ABOUT SECTION STARTS HERE -->
+
+    <section class="about" id="about">
+      <div class="about__container">
+        <div class="about__image">
+          <!-- Large background arch -->
+          <svg
+            class="about__shape about__shape--large"
+            viewBox="0 0 300 540"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              d="M 0 540 V 150 A 150 150 0 0 1 300 150 V 540 Z"
+              fill="#efd2db"
+            />
+          </svg>
+
+          <!-- Second background shape -->
+          <svg
+            class="about__shape about__shape--back"
+            viewBox="0 0 300 200"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              d="M 0 200 V 150 A 150 150 0 0 1 300 150 V 200 Z"
+              fill="#e6b8c8"
+            />
+          </svg>
+
+          <!-- Portrait -->
+          <img src="images/about_bianca2.JPG" alt="Bianca Lee" />
+
+          <!-- Foreground pink arch -->
+          <svg
+            class="about__shape about__shape--front"
+            viewBox="0 0 300 240"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              d="M 0 240 V 220 A 150 150 0 0 1 300 150 V 400 Z"
+              fill="#e69ab0"
+            />
+          </svg>
+        </div>
+
+        <div class="about__content">
+          <div class="about__heading">
+            <p class="about__eyebrow">About Me</p>
+            <h2 class="about__title">
+              Bianca Lee<span class="title__accent">.</span>
+            </h2>
+          </div>
+
+          <div class="about__description">
+            <p>
+              I'm a Front-End Developer with over 20 years of experience in
+              design, bringing a creative eye and a thoughtful approach to
+              building digital experiences.
+            </p>
+
+            <p>
+              My career began in graphic design and evolved into web design and
+              development, giving me a strong foundation in visual storytelling,
+              user experience, and responsive design. From crafting digital
+              layouts to hand-coding HTML and CSS email campaigns, I've
+              developed an appreciation for both the creative and technical
+              sides of the web.
+            </p>
+
+            <p>
+              Today, I'm continuing to strengthen my front-end development
+              skills, with a focus on creating responsive, accessible, and
+              visually engaging websites. I bring a unique combination of design
+              experience, attention to detail, and a genuine passion for turning
+              creative ideas into functional digital experiences.
+            </p>
+
+            <h3 class="about__tagline">
+              Beautiful design. Thoughtful code. A distinctive identity.
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION ENDS HERE -->
+
+    <!-- PORTFOLIO SECTION STARTS HERE -->
+
+    <section class="portfolio" id="portfolio">
+      <div class="portfolio__container">
+        <div class="portfolio__heading">
+          <p class="portfolio__eyebrow">The Portfolio</p>
+
+          <h2 class="portfolio__title">
+            Selected Work<span class="title__accent">.</span>
+          </h2>
+
+          <p class="portfolio__intro">
+            A collection of design and front-end development projects that blend
+            creativity, code, and user experience.
+          </p>
+        </div>
+
+        <div class="portfolio__grid">
+          <!-- CARD 01: Frontend Simplified -->
+
+          <article class="portfolio__card">
+            <div class="portfolio__image">
+              <img
+                src="images/Treact-mockup.png"
+                alt="Treact and Library responsive websites"
+              />
+            </div>
+
+            <div class="portfolio__card-info">
+              <h3 class="portfolio__project-title">
+                Frontend Simplified Projects
+              </h3>
+
+              <p class="portfolio__category">
+                Responsive Front-End Development
+              </p>
+
+              <div class="portfolio__tags">
+                <span class="portfolio__tag">HTML</span>
+                <span class="portfolio__tag">CSS</span>
+                <span class="portfolio__tag">Responsive Design</span>
+              </div>
+
+              <div class="portfolio__project-links">
+                <a
+                  href="https://biancalee-nyc.github.io/treact-final-project/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Treact ↗
+                </a>
+
+                <a
+                  href="https://biancalee-nyc.github.io/fes-library/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Library ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 02: Globus -->
+
+          <article class="portfolio__card">
+            <div class="portfolio__image">
+              <img
+                src="images/globus-mockup.png"
+                alt="Globus, Cosmos and Avalon email campaigns"
+              />
+            </div>
+
+            <div class="portfolio__card-info">
+              <h3 class="portfolio__project-title">Globus Family of Brands</h3>
+
+              <p class="portfolio__category">
+                Globus · Cosmos · Avalon Waterways
+              </p>
+
+              <div class="portfolio__tags">
+                <span class="portfolio__tag">HTML</span>
+                <span class="portfolio__tag">CSS</span>
+                <span class="portfolio__tag">Email Development</span>
+              </div>
+
+              <div class="portfolio__project-links">
+                <a
+                  href="images/emails/globus.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Globus ↗
+                </a>
+
+                <a
+                  href="images/emails/Avalon.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Avalon ↗
+                </a>
+
+                <a
+                  href="images/emails/cosmos.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Cosmos ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD TWO ENDS HERE -->
+
+          <!-- CARD THREE STARTS HERE -->
+
+          <!-- CARD 03: FOCUS CAMERA -->
+          <article class="portfolio__card">
+            <div class="portfolio__image">
+              <img
+                src="images/focuscamera-mockup.png"
+                alt="Focus Camera website displayed on an iMac"
+              />
+            </div>
+
+            <div class="portfolio__card-info">
+              <h3 class="portfolio__project-title">Focus Camera</h3>
+
+              <p class="portfolio__category">Web Design & Development</p>
+
+              <p class="portfolio__description">
+                Website and landing page design, email newsletters, and digital
+                marketing assets for a photography and electronics retailer.
+              </p>
+
+              <div class="portfolio__tags">
+                <span class="portfolio__tag">Web Design</span>
+                <span class="portfolio__tag">HTML</span>
+                <span class="portfolio__tag">CSS</span>
+              </div>
+
+              <div class="portfolio__project-links">
+                <a
+                  href="images/focuscamera.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Project ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD THREE ENDS HERE -->
+
+          <!-- CARD FOUR STARTS HERE -->
+
+          <!-- CARD 04: MIDITTO -->
+          <article class="portfolio__card">
+            <div class="portfolio__image">
+              <img
+                src="images/middito-mockup.png"
+                alt="Miditto email design displayed on a MacBook Pro"
+              />
+            </div>
+
+            <div class="portfolio__card-info">
+              <h3 class="portfolio__project-title">Miditto</h3>
+
+              <p class="portfolio__category">Web Design & Email Development</p>
+
+              <p class="portfolio__description">
+                Designed and coded email newsletters and promotional web content
+                for a wine-focused social rewards platform.
+              </p>
+
+              <div class="portfolio__tags">
+                <span class="portfolio__tag">Web Design</span>
+                <span class="portfolio__tag">HTML</span>
+                <span class="portfolio__tag">Email Design</span>
+              </div>
+
+              <div class="portfolio__project-links">
+                <a
+                  href="images/miditto.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Project ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD FOUR ENDS HERE -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+      <div class="contact__container">
+        <p class="contact__eyebrow">Let's Connect</p>
+
+        <h2 class="contact__title">
+          Let's Work<br />
+          Together<span class="contact__period">.</span>
+        </h2>
+
+        <p class="contact__description">
+          Have a project, opportunity, or just want to say hello? I'd love to
+          hear from you.
+        </p>
+
+        <div class="contact__buttons">
+          <a
+            href="mailto:YOUR_EMAIL@example.com"
+            class="contact__button contact__button--primary"
+          >
+            Get in Touch
+          </a>
+
+          <a
+            href="images/Bianca_Lee_Resume_Header_Fixed.pdf"
+            class="contact__button contact__button--secondary"
+            download
+          >
+            Download Résumé
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
